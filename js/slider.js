@@ -73,3 +73,15 @@ else if(select==6){
     sliderDetail.innerHTML = "We make sure you are well settled in your new home. Our journey together doesn't end here. We provide 15 years of warranty.";
 }
 }
+
+
+$(document).ready(function() {
+    $('.collapse.in').prev('.panel-heading').addClass('active');
+    $('#accordion, #bs-collapse')
+      .on('show.bs.collapse', function(a) {
+        $(a.target).prev('.panel-heading').addClass('active');
+      })
+      .on('hide.bs.collapse', function(a) {
+        $(a.target).prev('.panel-heading').removeClass('active');
+      });
+  });
