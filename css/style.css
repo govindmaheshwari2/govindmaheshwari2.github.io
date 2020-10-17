@@ -4153,13 +4153,13 @@ ul {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area {
   background-color: #091b27;
-  padding: 100px 0 0;
+  padding: 50px 0;
 }
 
 @media (max-width: 991px) {
   /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
   .footer-area {
-    padding: 70px 0 0;
+    padding: 70px 0;
   }
 }
 
