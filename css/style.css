@@ -226,6 +226,7 @@ h2 {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 103, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
+
   h2 {
     font-size: 24px;
     line-height: 25px;
@@ -280,8 +281,15 @@ button:focus,
   }
 }
 
+@media (max-width: 991px) {
+  h1 {
+    color: black;
+  }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 144, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
+
   .section_tittle {
     margin-bottom: 50px;
   }
@@ -289,6 +297,9 @@ button:focus,
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 144, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
+  h1 {
+    color: black;
+  }
   .section_tittle {
     font-size: 50px;
   }
@@ -2460,6 +2471,12 @@ ul {
   line-height: 1.8;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .banner_part .banner_text p {
+    color: black;
+  }
 }
 
 /* line 76, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */

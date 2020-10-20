@@ -54,6 +54,12 @@ figure {
   width: 50%;
 }
 
+@media (max-width: 991px) {
+  #slideImg {
+    width: 100%;
+  }
+}
+
 #sliderText {
   display: block;
   margin-left: auto;
@@ -66,7 +72,7 @@ figure {
 
 .md-stepper-horizontal {
   display: table;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -75,10 +81,38 @@ figure {
   position: relative;
   padding: 24px;
 }
-.md-stepper-horizontal .md-step:hover,
-.md-stepper-horizontal .md-step:active {
-  background-color: rgba(0, 0, 0, 0.04);
+
+@media (max-width: 991px) {
+  .md-stepper-horizontal {
+    display: block;
+  }
+
+  .md-stepper-horizontal .md-step {
+    display: table-row-group;
+  }
+
+  .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+  }
+
+  .float-child {
+    width: 70%;
+    float: left;
+    padding: 20px;
+  }
+  .float-child.first {
+    width: 20%;
+  }
+
+  .md-stepper-horizontal .md-step .md-step-title {
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
 }
+
 .md-stepper-horizontal .md-step:active {
   border-radius: 15% / 75%;
 }
