@@ -54,12 +54,6 @@ figure {
   width: 50%;
 }
 
-@media (max-width: 991px) {
-  #slideImg {
-    width: 100%;
-  }
-}
-
 #sliderText {
   display: block;
   margin-left: auto;
@@ -69,7 +63,14 @@ figure {
   padding: 20px;
   background-color: aliceblue;
 }
-
+@media (max-width: 991px) {
+  #slideImg {
+    width: 100%;
+  }
+  #sliderText {
+    width: 100%;
+  }
+}
 .md-stepper-horizontal {
   display: table;
   width: 100%;
@@ -92,14 +93,15 @@ figure {
   }
 
   .float-container {
+    display: flex;
     border: 3px solid #fff;
-    padding: 20px;
   }
 
   .float-child {
+    flex: 1;
     width: 80%;
     float: left;
-    padding: 20px;
+    padding: 5px;
   }
   .float-child.first {
     width: 20%;
