@@ -62,6 +62,7 @@ figure {
   text-align: center;
   padding: 20px;
   background-color: aliceblue;
+  border-bottom: 0px solid aliceblue;
 }
 @media (max-width: 991px) {
   #slideImg {
@@ -142,7 +143,7 @@ figure {
   background-color: #00ae4d;
 }
 .md-stepper-horizontal.orange .md-step.active .md-step-circle {
-  background-color: #f96302;
+  background-color: #f9b700;
 }
 .md-stepper-horizontal .md-step.active .md-step-circle {
   background-color: rgb(33, 150, 243);
@@ -223,12 +224,11 @@ figure {
 }
 
 h3 {
-  color: #001b5e;
+  color: #112327;
   font-size: 24px;
   text-align: center;
   margin-top: 4px;
   padding-bottom: 6px;
-  border-bottom: 1px solid #eee;
   margin-bottom: 6px;
   font-weight: 400;
 }
@@ -279,7 +279,7 @@ a:active {
 }
 
 .panel-heading {
-  background-color: #001b5e;
+  background-color: #112327;
   border-radius: 0;
   border: none;
   color: #fff;

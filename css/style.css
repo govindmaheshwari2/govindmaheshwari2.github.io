@@ -4,9 +4,9 @@
 .btn_2:hover {
   background-image: linear-gradient(
     to left,
-    #ee390f 0%,
+    #112327 0%,
     #f9b700 51%,
-    #ee390f 100%
+    #112327 100%
   );
 }
 
@@ -211,7 +211,7 @@ p {
 h2 {
   font-size: 44px;
   line-height: 28px;
-  color: #001b5e;
+  color: #112327;
   font-weight: 600;
   line-height: 1.222;
 }
@@ -281,12 +281,6 @@ button:focus,
   }
 }
 
-@media (max-width: 991px) {
-  h1 {
-    color: black;
-  }
-}
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 144, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
 
@@ -297,9 +291,7 @@ button:focus,
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 144, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
-  h1 {
-    color: black;
-  }
+
   .section_tittle {
     font-size: 50px;
   }
@@ -315,7 +307,7 @@ button:focus,
 /* line 158, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_common.scss */
 .section_tittle h2 {
   font-size: 60px;
-  color: #001b5e;
+  color: #112327;
   line-height: 70px;
   font-weight: 700;
   text-transform: uppercase;
@@ -532,7 +524,7 @@ ul {
 .btn_1 {
   display: inline-block;
   padding: 13.5px 45px;
-  background-color: #ff5e13;
+  background-color: #f9b700;
   font-size: 14px;
   color: #fff;
   -webkit-transition: 0.5s;
@@ -543,8 +535,8 @@ ul {
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_1:hover {
-  color: #fff !important;
-  background-color: #001b5e;
+  color: #f9b700 !important;
+  background-color: #fff;
 }
 
 @media (max-width: 576px) {
@@ -645,18 +637,18 @@ ul {
 
 /* line 107, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_3:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 109, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_3:hover:after {
   left: 15px;
-  background-color: #ff5e13;
+  background-color: #112327;
 }
 
 /* line 115, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_4 {
-  background-color: #ff5e13;
+  background-color: #112327;
   padding: 3.5px 21px;
   background: #ff663b;
   text-transform: capitalize;
@@ -685,7 +677,7 @@ ul {
   color: #fff;
   border: 1px solid #edeff2;
   text-transform: uppercase;
-  background-color: #ff5e13;
+  background-color: #112327;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -757,7 +749,7 @@ ul {
 /* line 14, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
 .blog_area a:hover,
 .blog_area a :hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 20, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
@@ -1263,7 +1255,7 @@ ul {
 
 /* line 540, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
 .blog_details a:hover {
-  color: #ff5e13 !important;
+  color: #112327 !important;
 }
 
 /* line 545, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
@@ -1554,7 +1546,7 @@ ul {
 
 /* line 835, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #ff5e13;
+  background: #112327;
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -1802,7 +1794,7 @@ ul {
 
 /* line 1201, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
 .single-post-area .blog-author a:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 1206, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog.scss */
@@ -2141,7 +2133,7 @@ ul {
 
 /* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_single_blog.scss */
 .single_blog_post .single_blog .single_appartment_content p a {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 22, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_single_blog.scss */
@@ -2192,7 +2184,7 @@ ul {
 
 /* line 13, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
 .main_menu .navbar {
-  padding: 20px 0px;
+  padding: 0px;
 }
 
 /* line 17, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
@@ -2231,7 +2223,7 @@ ul {
 
 /* line 37, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link:hover {
-  color: #ee390f;
+  color: #f9b700;
 }
 
 /* line 42, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
@@ -2272,7 +2264,7 @@ ul {
 
 /* line 76, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
 .dropdown .dropdown-menu .dropdown-item:hover {
-  color: #ff5e13 !important;
+  color: #112327 !important;
 }
 
 /* line 82, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
@@ -2325,11 +2317,11 @@ ul {
   .dropdown:hover .dropdown-menu {
     transform: scale(1);
     display: block;
-    color: #ff5e13;
+    color: #112327;
   }
   /* line 137, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
   .dropdown .dropdown-item:hover {
-    color: #ff5e13 !important;
+    color: #112327 !important;
   }
 }
 
@@ -2374,7 +2366,6 @@ ul {
   /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
   .banner_part {
     height: 750px;
-    background-image: none;
     background-color: #f7f7f7;
   }
 }
@@ -2383,7 +2374,6 @@ ul {
   /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
   .banner_part {
     height: 650px;
-    background-image: none;
     background-color: #f7f7f7;
   }
 }
@@ -2429,7 +2419,7 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #556172;
+  color: #f9b700;
   margin-bottom: 14px;
 }
 
@@ -2462,7 +2452,7 @@ ul {
 
 /* line 65, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
 .banner_part .banner_text h1 span {
-  color: #ff5e13;
+  color: #f9b700;
 }
 
 /* line 70, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
@@ -2471,12 +2461,6 @@ ul {
   line-height: 1.8;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-}
-
-@media (max-width: 991px) {
-  .banner_part .banner_text p {
-    color: black;
-  }
 }
 
 /* line 76, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
@@ -2542,7 +2526,7 @@ ul {
 
 /* line 41, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_our_service.scss */
 .our_service .single_service {
-  padding: 46px 20px 60px;
+  padding: 46px 10px 20px;
   border: 1px solid #e8e9eb;
   text-align: center;
   -webkit-transition: 0.6s;
@@ -2575,7 +2559,7 @@ ul {
   font-size: 50px;
   margin-bottom: 15px;
   display: inline-block;
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 67, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_our_service.scss */
@@ -2743,7 +2727,7 @@ ul {
   height: 2px;
   width: 60px;
   content: "";
-  background-color: #ff5e13;
+  background-color: #112327;
 }
 
 /* line 47, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_about_part.scss */
@@ -2866,7 +2850,7 @@ ul {
   position: absolute;
   left: 0;
   top: 20px;
-  color: #ff5e13;
+  color: #112327;
 }
 
 @media (max-width: 991px) {
@@ -2945,7 +2929,7 @@ ul {
   font-size: 150px;
   line-height: 120px;
   display: inline-block;
-  color: #ff5e13;
+  color: #112327;
   padding-right: 35px;
   border-right: 1px solid #83868c;
   font-weight: 700;
@@ -3041,12 +3025,12 @@ ul {
 
 /* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_our_project.scss */
 .our_project .project_menu_item ul li:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 29, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_our_project.scss */
 .our_project .project_menu_item .active {
-  color: #ff5e13;
+  color: #112327;
 }
 
 @media (max-width: 576px) {
@@ -3160,7 +3144,7 @@ ul {
   margin-bottom: 9px;
   margin-top: 13px;
   font-size: 15px;
-  color: #ff5e13;
+  color: #112327;
 }
 
 /**************** our_offer css end ****************/
@@ -3328,7 +3312,7 @@ ul {
 
 /* line 97, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_review.scss */
 .review_part .owl-nav button span:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 @media (max-width: 991px) {
@@ -3368,7 +3352,7 @@ ul {
 .member_counter .single_member_counter span {
   font-size: 60px;
   font-weight: 700;
-  color: #ff5e13;
+  color: #112327;
   font-style: "Roboto", sans-serif;
   display: inline-block;
   float: left;
@@ -4255,7 +4239,7 @@ ul {
 
 /* line 54, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .single-footer-widget ul li a:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 58, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
@@ -4290,7 +4274,7 @@ ul {
 
 /* line 82, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .single-footer-widget .click-btn {
-  background-color: #ff5e13;
+  background-color: #112327;
   color: #fff;
   border-radius: 0;
   border-top-left-radius: 0px;
@@ -4437,7 +4421,7 @@ ul {
 
 /* line 194, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .btn {
-  background-color: #ff5e13;
+  background-color: #112327;
   color: #fff;
   width: 40px;
   border-radius: 0px;
@@ -4499,7 +4483,7 @@ ul {
 
 /* line 237, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .copyright_part_text a {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 241, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
@@ -4544,7 +4528,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 93, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
@@ -4716,28 +4700,28 @@ h6 {
 /* line 217, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .genric-btn.primary {
   color: #fff;
-  background: #ff5e13;
+  background: #112327;
   border: 1px solid transparent;
 }
 
 /* line 221, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .genric-btn.primary:hover {
-  color: #ff5e13;
-  border: 1px solid #ff5e13;
+  color: #112327;
+  border: 1px solid #112327;
   background: #fff;
 }
 
 /* line 227, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .genric-btn.primary-border {
-  color: #ff5e13;
-  border: 1px solid #ff5e13;
+  color: #112327;
+  border: 1px solid #112327;
   background: #fff;
 }
 
 /* line 231, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #ff5e13;
+  background: #112327;
   border: 1px solid transparent;
 }
 
@@ -4895,7 +4879,7 @@ h6 {
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
-  border-left: 2px solid #ff5e13;
+  border-left: 2px solid #112327;
 }
 
 /* line 353, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
@@ -5050,7 +5034,7 @@ h6 {
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 3px solid #ff5e13;
+  border: 3px solid #112327;
   background: #fff;
   top: 4px;
   left: 0;
@@ -5065,7 +5049,7 @@ h6 {
 /* line 475, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .ordered-list li {
   list-style-type: decimal-leading-zero;
-  color: #ff5e13;
+  color: #112327;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -5080,7 +5064,7 @@ h6 {
 .ordered-list-alpha li {
   margin-left: 30px;
   list-style-type: lower-alpha;
-  color: #ff5e13;
+  color: #112327;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -5095,7 +5079,7 @@ h6 {
 .ordered-list-roman li {
   margin-left: 30px;
   list-style-type: lower-roman;
-  color: #ff5e13;
+  color: #112327;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -5178,7 +5162,7 @@ h6 {
 /* line 568, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .single-input-primary:focus {
   outline: none;
-  border: 1px solid #ff5e13;
+  border: 1px solid #112327;
 }
 
 /* line 574, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
@@ -5246,7 +5230,7 @@ h6 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #ff5e13;
+  background: #112327;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -5337,7 +5321,7 @@ h6 {
 
 /* line 696, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .primary-switch input:checked + label:before {
-  background: #ff5e13;
+  background: #112327;
 }
 
 /* line 704, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
@@ -5730,13 +5714,13 @@ h6 {
 
 /* line 1022, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .default-select .nice-select .list .option.selected {
-  color: #ff5e13;
+  color: #112327;
   background: transparent;
 }
 
 /* line 1026, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .default-select .nice-select .list .option:hover {
-  color: #ff5e13;
+  color: #112327;
   background: transparent;
 }
 
@@ -5793,13 +5777,13 @@ h6 {
 
 /* line 1067, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .form-select .nice-select .list .option.selected {
-  color: #ff5e13;
+  color: #112327;
   background: transparent;
 }
 
 /* line 1071, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_elements.scss */
 .form-select .nice-select .list .option:hover {
-  color: #ff5e13;
+  color: #112327;
   background: transparent;
 }
 
@@ -5969,7 +5953,7 @@ h6 {
   height: 10px;
   top: 5px;
   left: 0;
-  background-color: #ff5e13;
+  background-color: #112327;
   border-radius: 50%;
 }
 
@@ -6059,7 +6043,7 @@ h6 {
 .blog_part .single-home-blog .card h5:hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 134, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_blog_part.scss */
@@ -6122,7 +6106,7 @@ h6 {
 
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_copyright_part.scss */
 .copyright_part a {
-  color: #ff5e13;
+  color: #112327;
 }
 
 @media (max-width: 576px) {
@@ -6212,7 +6196,7 @@ h6 {
 
 /* line 23, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_contact.scss */
 .contact-info .media-body h3 a:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 29, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_contact.scss */
@@ -6519,7 +6503,7 @@ h6 {
 
 /* line 54, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .single-footer-widget ul li a:hover {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 58, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
@@ -6554,7 +6538,7 @@ h6 {
 
 /* line 82, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .single-footer-widget .click-btn {
-  background-color: #ff5e13;
+  background-color: #112327;
   color: #fff;
   border-radius: 0;
   border-top-left-radius: 0px;
@@ -6701,7 +6685,7 @@ h6 {
 
 /* line 194, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .btn {
-  background-color: #ff5e13;
+  background-color: #112327;
   color: #fff;
   width: 40px;
   border-radius: 0px;
@@ -6763,7 +6747,7 @@ h6 {
 
 /* line 237, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
 .footer-area .copyright_part_text a {
-  color: #ff5e13;
+  color: #112327;
 }
 
 /* line 241, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_footer.scss */
