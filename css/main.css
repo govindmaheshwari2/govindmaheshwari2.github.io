@@ -18,10 +18,20 @@ h4 {
 }
 
 .image {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 33%;
-  float: left;
+  align-self: center;
+}
+@media (max-width: 991px) {
+  .image {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .image {
+    width: 100%;
+  }
 }
 figure {
   overflow: hidden;
