@@ -3360,13 +3360,12 @@ ul {
 
 /* line 17, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_member_counter.scss */
 .member_counter .single_member_counter span {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   color: #112327;
   font-style: "Roboto", sans-serif;
   display: inline-block;
   float: left;
-  padding-right: 30px;
   line-height: 57px;
 }
 

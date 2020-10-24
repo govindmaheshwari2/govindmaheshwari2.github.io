@@ -537,3 +537,9 @@ a:active {
 .contactus_text {
   color: #fff;
 }
+
+
+/* counter */
+.plus_symbol{
+  padding-right: 30px;
+}
