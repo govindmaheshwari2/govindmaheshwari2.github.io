@@ -531,12 +531,12 @@ ul {
   transition: 0.5s;
   text-transform: capitalize;
   border: 1px solid transparent;
+  margin-left: 10px;
 }
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_1:hover {
   color: #f9b700 !important;
-  background-color: #fff;
 }
 
 @media (max-width: 576px) {
@@ -6201,6 +6201,7 @@ h6 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
+  text-align: left;
   color: #2a2a2a;
 }
 
