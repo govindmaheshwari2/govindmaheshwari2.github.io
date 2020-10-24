@@ -4,9 +4,9 @@
 .btn_2:hover {
   background-image: linear-gradient(
     to left,
-    #112327 0%,
+    #f9b700 0%,
     #f9b700 51%,
-    #112327 100%
+    #f0be34 100%
   );
 }
 
@@ -530,13 +530,14 @@ ul {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: capitalize;
-  border: 1px solid transparent;
-  margin-left: 10px;
+  border: 1px solid;
 }
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_1:hover {
-  color: #f9b700 !important;
+  color: #112327 !important;
+  background-color: #ebe5e5;
+  border: #112327;
 }
 
 @media (max-width: 576px) {
@@ -578,6 +579,7 @@ ul {
   background-size: 200% auto;
   font-size: 15px;
   font-weight: 500;
+  margin-left: 10px;
 }
 
 /* line 68, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
