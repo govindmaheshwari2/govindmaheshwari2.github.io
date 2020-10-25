@@ -16,8 +16,8 @@ if(select==1){
 
     image.src="images/how-it-works-2.png";
    // sliderHead.innerHTML = "* Construction Package Finalised by Customer";
-    sliderHead1.innerHTML = "01. Construction Package Finalised by Customer";
-    sliderHead2.innerHTML = "02. Initial Booking & Advance Payment";
+    sliderHead1.innerHTML = "1.1 Construction Package Finalised by Customer";
+    sliderHead2.innerHTML = "1.2 Initial Booking & Advance Payment";
 }else if(select==2){
     slider1.classList.add("active");
     slider2.classList.add("active");
@@ -25,8 +25,8 @@ if(select==1){
     slider4.classList.remove("active");
 
     image.src="images/how-it-works-4.png";
-    sliderHead1.innerHTML = "03. Drawing, Design discussions & Finalizing";
-    sliderHead2.innerHTML = "04. Main Agreement signed";
+    sliderHead1.innerHTML = "2.1 Drawing, Design discussions & Finalizing";
+    sliderHead2.innerHTML = "2.2 Main Agreement signed";
 }else if(select==3){
     slider1.classList.add("active");
     slider2.classList.add("active");
@@ -34,8 +34,8 @@ if(select==1){
     slider4.classList.remove("active");
  
     image.src="images/how-it-works-5.png";
-    sliderHead1.innerHTML = "05. Project Schedule Creation & Excution";
-    sliderHead2.innerHTML = "06. Monthly Cash-flow created";
+    sliderHead1.innerHTML = "3.1 Project Schedule Creation & Excution";
+    sliderHead2.innerHTML = "3.2 Monthly Cash-flow created";
 }else if(select==4){
     slider1.classList.add("active");
     slider2.classList.add("active");
@@ -43,8 +43,8 @@ if(select==1){
     slider4.classList.add("active");
 
     image.src="images/how-it-works-3.png";
-    sliderHead1.innerHTML = "07. Progress tracking and audit";
-    sliderHead2.innerHTML = "08. Project completion & Handover";
+    sliderHead1.innerHTML = "4.1 Progress tracking and audit";
+    sliderHead2.innerHTML = "4.2 Project completion & Handover";
 }
 }
 
