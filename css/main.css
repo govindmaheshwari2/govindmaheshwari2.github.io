@@ -596,6 +596,7 @@ a:active {
 
 .section_padding_pre-footer {
   padding: 100px;
+  background-color: #f1eeee;
 }
 
 .pre-footer_text h1 {
@@ -616,4 +617,79 @@ a:active {
   .feature {
     display: inline-block;
   }
+}
+
+/* Image Popup */
+
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  color: black;
+}
+
+.single_feature_project {
+  border: 1px solid #000;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.single_feature_project span {
+  font-weight: bold;
+  color: #000;
+  margin-left: 5px;
+}
+
+.single_feature_project h4 {
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+.project_head {
+  padding: 0px !important;
+}
+
+.know_more {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.padding_bottom {
+  padding-bottom: 50px;
 }

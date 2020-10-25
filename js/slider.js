@@ -14,7 +14,7 @@ if(select==1){
     slider3.classList.remove("active");
     slider4.classList.remove("active");
 
-    image.src="images/how-it-works-2.png";
+    image.src="images/how-it-worksks-2.png";
    // sliderHead.innerHTML = "* Construction Package Finalised by Customer";
     sliderHead1.innerHTML = "1.1 Construction Package Finalised by Customer";
     sliderHead2.innerHTML = "1.2 Initial Booking & Advance Payment";
