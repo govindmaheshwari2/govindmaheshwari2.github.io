@@ -468,9 +468,9 @@ a:active {
 .quality_btn {
   margin-top: 20px;
   display: flex;
-  background-color: #000;
+  background-color: #ffc42e;
   border: 1px solid #fff;
-  color: #fff;
+  color: #112327;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -490,8 +490,11 @@ a:active {
   }
 }
 
-.quality_btn:hover {
-  color: #f9b700;
+.quality_btn:hover,
+.current {
+  color: #112327;
+  background-color: #fff;
+  border: 1px solid #ffc42e;
 }
 
 .quality_see_all {
@@ -575,14 +578,17 @@ a:active {
   width: 70%;
 }
 
-.referral_btn {
-  margin-top: 20px;
-  background-color: #f9b700;
-  width: 120px;
-  padding: 10px;
-  border-radius: 5px;
-  padding-bottom: 15px;
+.referral_btn .btn_2 {
+  margin-top: 25px;
 }
+/* 
+  .referral_btn {
+    margin-top: 20px;
+    background-color: #f9b700;
+    width: 120px;
+    padding: 10px;
+    padding-bottom: 15px;
+  } */
 
 .referral_img {
   width: 30%;
@@ -601,7 +607,6 @@ a:active {
 
 .section_padding_pre-footer {
   padding: 100px;
-  background-color: #f1eeee;
 }
 
 .pre-footer_text h1 {
