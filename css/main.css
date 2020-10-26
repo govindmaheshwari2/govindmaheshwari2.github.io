@@ -945,3 +945,12 @@ a:active {
 .btn-link-btn--icon-left h1 {
   color: #ffc42e;
 }
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
