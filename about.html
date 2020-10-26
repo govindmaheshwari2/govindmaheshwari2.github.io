@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Excon</title>
-    <link rel="icon" href="img/favicon.png">
+    <title>Canstruct</title>
+    <link rel="icon" href="images/logoTransparent.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -32,7 +34,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo" width="160">
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,30 +49,33 @@
                                     <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" href="project.html">Our Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="services.html">services</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
+                                    <a class="nav-link" href="index.html#howitwork">How it Works</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="project.html">project</a>
-                                        <a class="dropdown-item" href="project_details.html">project details</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                        <a class="dropdown-item" href="about.html">About Us</a>
+                                        <a class="dropdown-item" href="join_professional.html">Join us as a
+                                            professional</a>
+                                        <a class="dropdown-item" href="#">Construction for Business</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
+
                                 <li class="d-none d-lg-block">
-                                    <a class="btn_1" href="#">Get a Quote</a>
+                                    <a class="btn_1" href="contact.html">LET'S BUILD</a>
+                                </li>
+                                <div class="vl"></div>
+                                <li class="nav-item" id="number">
+                                    <a class="nav-link" href="#">+91 9876543210</a>
+                                </li>
+                                <li class="nav-item" id="contactus">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -87,11 +93,9 @@
                 <div class="col-sm-6">
                     <div class="breadcrumb_tittle text-left">
                         <h2>About Us</h2>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="breadcrumb_content text-right">
-                        <p>Home<span>/</span>About Us</p>
+                        <h4 class="contactus_text">It all started with an idea, that changed the way we look at
+                            construction today. We started
+                            with the aim of making the construction simple, transparent and reliable .</h4>
                     </div>
                 </div>
             </div>
@@ -100,146 +104,223 @@
     <!-- breadcrumb start-->
 
     <!-- about us start-->
-    <section class="about_part section_padding">
+    <section class="section_padding">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 col-lg-6">
-                    <div class="about_part_img">
-                        <img src="img/about_part_img.png" alt="">
-                    </div>
+            <div class="about_us_heading">
+                <div class="qoutation">
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI5OC42NjcgMjk4LjY2NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoLTEsMS4yMjQ2NDY3OTkxNDczNTMyZS0xNiwtMS4yMjQ2NDY3OTkxNDczNTMyZS0xNiwtMSwyOTguNjY2OTkyMTg3NSwyOTguNjY3MDA3NDQ2Mjg5MDYpIj4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxnPgoJCQk8cG9seWdvbiBwb2ludHM9IjAsMTcwLjY2NyA2NCwxNzAuNjY3IDIxLjMzMywyNTYgODUuMzMzLDI1NiAxMjgsMTcwLjY2NyAxMjgsNDIuNjY3IDAsNDIuNjY3ICAgICIgZmlsbD0iI2ZmYzQyZSIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wb2x5Z29uPgoJCQk8cG9seWdvbiBwb2ludHM9IjE3MC42NjcsNDIuNjY3IDE3MC42NjcsMTcwLjY2NyAyMzQuNjY3LDE3MC42NjcgMTkyLDI1NiAyNTYsMjU2IDI5OC42NjcsMTcwLjY2NyAyOTguNjY3LDQyLjY2NyAgICAiIGZpbGw9IiNmZmM0MmUiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcG9seWdvbj4KCQk8L2c+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
                 </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="about_part_text">
-                        <h2>Engineering Your
-                            Dreams With Us</h2>
-                        <p>Which cattle fruitful he fly visi won't let above lesser stars. Fly form wonder every let third form two air seas after us said day won light also  together midst two female she great to open.</p>
-                        <ul>
-                            <li>
-                                <span class="flaticon-drop"></span>
-                                <h3>Certified Company</h3>
-                                <p>Be man air male shall under create light together grass fly dat also also his brought itself air abundantly </p>
-                            </li>
-                            <li>
-                                <span class="flaticon-ui"></span>
-                                <h3>Experience Employee</h3>
-                                <p>Be man air male shall under create light together grass fly do also also his brought itself air abundantly </p>
-                            </li>
-                        </ul>
-                    </div>
+                <p>Most customer centric company making Construction absolutely simple, transparent and reliable for
+                    everyone</p>
+                <div class="detail_about_us">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis possimus deserunt cupiditate
+                    eveniet libero maiores, et, at, temporibus ducimus hic! Suscipit asperiores debitis harum nobis
+                    placeat voluptates quibusdam impedit quam molestias quidem quis, nulla ex aut expedita! Rem
+                    assumenda quibusdam, animi eos fugit tenetur aspernatur ab, voluptatem ipsam, iure pariatur
+                    voluptatibus ea cum deserunt a consequatur! Quae placeat corporis praesentium quam omnis,
+                    consequuntur, ratione laudantium iste fugiat rerum incidunt nostrum harum assumenda at laborum,
+                    possimus et asperiores! Animi corrupti quo consectetur iure ipsam dignissimos doloremque maiores
+                    voluptate! Omnis ipsum explicabo veritatis debitis quae, enim voluptate ab ipsam numquam at deleniti
+                    non qui corrupti quis quo asperiores temporibus animi consequatur sed. Odio voluptatem a cupiditate,
+                    quas sed delectus quidem, iure unde ipsam asperiores, est doloremque molestiae. Itaque fugiat,
+                    blanditiis laborum vel tempora quia similique accusantium consectetur atque repudiandae dolor
+                    voluptates vero laboriosam, eligendi deserunt aut, ipsum magnam dolorum! Neque consequuntur
+                    voluptatibus a quisquam omnis illo? Odio, placeat. Molestias deserunt eveniet, accusantium nobis
+                    recusandae odio nam excepturi velit, alias ducimus cum voluptatibus corrupti sit, at ipsum veritatis
+                    reiciendis! Veniam debitis natus et optio suscipit unde possimus. Quo amet, aspernatur iusto enim
+                    obcaecati veritatis laborum provident officiis voluptatem labore magnam rem sunt! Ea sit sed id unde
+                    porro rem quis? Sit repellendus, earum minus corporis ea accusantium corrupti aliquid, dolorem rem
+                    repellat ex tempora, magni non quas fuga maiores aperiam excepturi sunt doloremque velit aliquam.
+                    Deleniti, consequatur voluptatem. Quae, maxime et sint doloremque sit ad nihil laborum atque nemo
+                    repudiandae vitae harum?
                 </div>
             </div>
         </div>
     </section>
     <!-- about us part end-->
 
-    <section class="about_part experiance_part section_padding single_experiance_section">
+    <section class="padding_bottom">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 col-lg-6">
-                    <div class="about_part_text">
-                        <h2>We Are Experience
-                                in Construction</h2>
-                        <p>Their whose made waters there our, air above first give dry fruit that second whose herb creeping it us light spirit appear mans. So green abundantly She'd. Greater divide dry bearing years ourends herb upon which open lights had blessed replenish Cattle give his. Abundantly over saying which beast dominion multiply behold to wateo.</p>
-                        <div class="about_text_iner">
-                            <div class="about_text_counter">
-                                <h2>20</h2>
-                            </div>
-                            <div class="about_iner_content">
-                                <h3>year <span>of Experience</span></h3>
-                            </div>
-                        </div>
+            <div class="section_tittle">
+                <h2>What we focus and strive for</h2>
+            </div>
+            <div class="row">
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8Y2lyY2xlIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9IiIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2IiBmaWxsPSIjZmZjNDJlIiBkYXRhLW9yaWdpbmFsPSIjZmZjYTI4IiBjbGFzcz0iIj48L2NpcmNsZT4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxjaXJjbGUgc3R5bGU9IiIgY3g9IjE2MCIgY3k9IjE5MiIgcj0iMzIiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiM2ZDRjNDEiIGNsYXNzPSIiPjwvY2lyY2xlPgoJPGNpcmNsZSBzdHlsZT0iIiBjeD0iMzUyIiBjeT0iMTkyIiByPSIzMiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzZkNGM0MSIgY2xhc3M9IiI+PC9jaXJjbGU+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMjU2LDQxNmMtNDIuNzUyLDAtODIuOTEyLTE2LjY3Mi0xMTMuMTUyLTQ2Ljg4Yy02LjI0LTYuMjQtNi4yNC0xNi4zODQsMC0yMi42MjQgICBzMTYuMzg0LTYuMjQsMjIuNjI0LDBjNDguMzUyLDQ4LjM4NCwxMzIuNjQsNDguMzg0LDE4MS4wMjQsMGM2LjI0LTYuMjQsMTYuMzg0LTYuMjQsMjIuNjI0LDBzNi4yNCwxNi4zODQsMCwyMi42MjQgICBDMzM4LjkxMiwzOTkuMzI4LDI5OC43NTIsNDE2LDI1Niw0MTZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjNmQ0YzQxIiBjbGFzcz0iIj48L3BhdGg+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                        <p>Enjoyable Construction Experience</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="about_part_img">
-                        <img src="img/experiance_img.png" alt="">
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8Y2lyY2xlIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9IiIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2IiBmaWxsPSIjZmZjNDJlIiBkYXRhLW9yaWdpbmFsPSIjMjE5NmYzIiBjbGFzcz0iIj48L2NpcmNsZT4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iIiBkPSJNMzM2LDE5MmgtMTcuNjMyYy0yLjQtMTEuOTA0LTcuNzEyLTIyLjY1Ni0xNC43ODQtMzJIMzM2YzguODMyLDAsMTYtNy4xNjgsMTYtMTZzLTcuMTY4LTE2LTE2LTE2ICBoLTk2aC02NGMtOC44MzIsMC0xNiw3LjE2OC0xNiwxNnM3LjE2OCwxNiwxNiwxNmg2NGMyMC44MzIsMCwzOC40MzIsMTMuNDA4LDQ1LjA1NiwzMkgxNzZjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZzNy4xNjgsMTYsMTYsMTYgIGgxMDkuMDU2Yy02LjYyNCwxOC41OTItMjQuMjI0LDMyLTQ1LjA1NiwzMmgtNjRjLTYuNDY0LDAtMTIuMzIsMy45MDQtMTQuNzg0LDkuODg4Yy0yLjQ5Niw1Ljk4NC0xLjEyLDEyLjgzMiwzLjQ1NiwxNy40NGwxMjgsMTI4ICBDMjk1LjgwOCw0MTQuNDMyLDI5OS45MDQsNDE2LDMwNCw0MTZzOC4xOTItMS41NjgsMTEuMzI4LTQuNjcyYzYuMjQtNi4yNCw2LjI0LTE2LjM4NCwwLTIyLjYyNEwyMTQuNjI0LDI4OEgyNDAgIGMzOC42MjQsMCw3MC45NDQtMjcuNTIsNzguMzY4LTY0SDMzNmM4LjgzMiwwLDE2LTcuMTY4LDE2LTE2UzM0NC44MzIsMTkyLDMzNiwxOTJ6IiBmaWxsPSIjZmFmYWZhIiBkYXRhLW9yaWdpbmFsPSIjZmFmYWZhIiBjbGFzcz0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                        <p>Best & Competitive Pricing</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM2Ny44MDUgMzY3LjgwNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMTgzLjkwMywwLjAwMWMxMDEuNTY2LDAsMTgzLjkwMiw4Mi4zMzYsMTgzLjkwMiwxODMuOTAycy04Mi4zMzYsMTgzLjkwMi0xODMuOTAyLDE4My45MDIgICBTMC4wMDEsMjg1LjQ2OSwwLjAwMSwxODMuOTAzbDAsMEMtMC4yODgsODIuNjI1LDgxLjU3OSwwLjI5LDE4Mi44NTYsMC4wMDFDMTgzLjIwNSwwLDE4My41NTQsMCwxODMuOTAzLDAuMDAxeiIgZmlsbD0iI2ZmYzQyZSIgZGF0YS1vcmlnaW5hbD0iIzNiYjU0YSI+PC9wYXRoPgoJPHBvbHlnb24gc3R5bGU9IiIgcG9pbnRzPSIyODUuNzgsMTMzLjIyNSAxNTUuMTY4LDI2My44MzcgODIuMDI1LDE5MS4yMTcgMTExLjgwNSwxNjEuOTYgMTU1LjE2OCwyMDQuODAxICAgIDI1Ni4wMDEsMTAzLjk2OCAgIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjZDRlMWY0IiBjbGFzcz0iIj48L3BvbHlnb24+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                        <p>Quality Assurance using our 220 Quality Checks</p>
+                    </div>
+                </div>
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTUxMiAxNjN2LTI3YzAtMzAuOTI4LTI1LjA3Mi01Ni01Ni01NmgtNDAwYy0zMC45MjggMC01NiAyNS4wNzItNTYgNTZ2MjdjMCAyLjc2MSAyLjIzOSA1IDUgNWg1MDJjMi43NjEgMCA1LTIuMjM5IDUtNXoiIGZpbGw9IiNmZmM0MmUiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCBkPSJtMCAyMDV2MTcxYzAgMzAuOTI4IDI1LjA3MiA1NiA1NiA1Nmg0MDBjMzAuOTI4IDAgNTYtMjUuMDcyIDU2LTU2di0xNzFjMC0yLjc2MS0yLjIzOS01LTUtNWgtNTAyYy0yLjc2MSAwLTUgMi4yMzktNSA1em0xMjggMTMxYzAgOC44MzYtNy4xNjQgMTYtMTYgMTZoLTE2Yy04LjgzNiAwLTE2LTcuMTY0LTE2LTE2di0xNmMwLTguODM2IDcuMTY0LTE2IDE2LTE2aDE2YzguODM2IDAgMTYgNy4xNjQgMTYgMTZ6IiBmaWxsPSIjZmZjNDJlIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" />
+                        <p>Payment to contractor only on completion of stage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMTY0MDYyIDAtMjU2IDExNC44MzU5MzgtMjU2IDI1NnMxMTQuODM1OTM4IDI1NiAyNTYgMjU2IDI1Ni0xMTQuODM1OTM4IDI1Ni0yNTYtMTE0LjgzNTkzOC0yNTYtMjU2LTI1NnptMTIxLjc1IDM4OC40MTQwNjJjLTQuMTYwMTU2IDQuMTYwMTU3LTkuNjIxMDk0IDYuMjUzOTA3LTE1LjA4MjAzMSA2LjI1MzkwNy01LjQ2MDkzOCAwLTEwLjkyNTc4MS0yLjA5Mzc1LTE1LjA4MjAzMS02LjI1MzkwN2wtMTA2LjY2Nzk2OS0xMDYuNjY0MDYyYy00LjAxMTcxOS0zLjk4ODI4MS02LjI1LTkuNDEwMTU2LTYuMjUtMTUuMDgyMDMxdi0xMzguNjY3OTY5YzAtMTEuNzk2ODc1IDkuNTU0Njg3LTIxLjMzMjAzMSAyMS4zMzIwMzEtMjEuMzMyMDMxczIxLjMzMjAzMSA5LjUzNTE1NiAyMS4zMzIwMzEgMjEuMzMyMDMxdjEyOS44MzU5MzhsMTAwLjQxNzk2OSAxMDAuNDE0MDYyYzguMzM5ODQ0IDguMzQzNzUgOC4zMzk4NDQgMjEuODI0MjE5IDAgMzAuMTY0MDYyem0wIDAiIGZpbGw9IiNmZmM0MmUiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" />
+                        <p>No Delays - Safety mechanisms against delays</p>
+                    </div>
+                </div>
+                <div class="col about_us_text">
+                    <div class="row">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2OS4zMzMgNDY5LjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMzIwLDBIMTQ5LjMzM0MxMTkuODkzLDAsOTYsMjMuODkzLDk2LDUzLjMzM1Y0MTZjMCwyOS40NCwyMy44OTMsNTMuMzMzLDUzLjMzMyw1My4zMzNIMzIwICAgIGMyOS40NCwwLDUzLjMzMy0yMy44OTMsNTMuMzMzLTUzLjMzM1Y1My4zMzNDMzczLjMzMywyMy44OTMsMzQ5LjQ0LDAsMzIwLDB6IE0yMzQuNjY3LDQ0OGMtMTcuNzA3LDAtMzItMTQuMjkzLTMyLTMyICAgIHMxNC4yOTMtMzIsMzItMzJzMzIsMTQuMjkzLDMyLDMyUzI1Mi4zNzMsNDQ4LDIzNC42NjcsNDQ4eiBNMzMwLjY2NywzNjIuNjY3aC0xOTJWNjRoMTkyVjM2Mi42Njd6IiBmaWxsPSIjZmZjNDJlIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                        <p>Transparent Contracts and Online monitoring</p>
+                    </div>
+                </div>
+            </div>
     </section>
+
+    <!--Pre-Footer-->
+    <section class="section_padding_pre-footer">
+        <div class="container">
+            <div class="pre-footer_text">
+                <h1>Hire the best construction services</h1>
+                <div class="row feature">
+                    <div class="col-sm-2 mb-4">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_3.svg" /></div>
+                            <div class="h2 flex-child">100</div>
+                        </div>
+                        <p>Total Units</p>
+                    </div>
+                    <div class="col-sm-2 mb-4">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_1.svg" /></div>
+                            <div class="h2 flex-child">220</div>
+                        </div>
+                        <p>Quality Checks</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_4.svg" /></div>
+                            <div class="h2 flex-child">10</div>
+                        </div>
+                        <p>Years Warranty</p>
+                    </div>
+                </div>
+                <div class="pre-footer_btn">
+                    <a class="btn_2" href="#">LET'S BUILD</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Pre-Footer-->
 
     <!-- footer part start-->
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                    <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="img/footer_logo.png" alt=""> </a>
-                        <p>So seed seed green that winged cattle in Gahesd thing made fly you're no divided deep move lan Gathering thing us land years living on floor me the cavaty do buty fresh</p>
-                    </div>
-                </div>
+
                 <div class="col-xl-3 col-sm-6 col-md-4">
                     <div class="single-footer-widget footer_2">
-                        <h4>Best Services</h4>
+                        <h4>Site Map</h4>
                         <div class="contact_info">
                             <ul>
                                 <li>
-                                    <a href="#">General Contracting</a>
+                                    <a href="index.html#howitwork">How it Works</a>
                                 </li>
                                 <li>
-                                    <a href="#">Mechanical Engineering</a>
+                                    <a href="project.html">Our Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html#ourservices">Our Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Civil Engineering</a>
+                                    <a href="about.html">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Bridge Construction</a>
-                                </li>
-                                <li>
-                                    <a href="#">Electrical Engineering</a>
+                                    <a href="contact.html">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xl-3 col-sm-6 col-md-4">
                     <div class="single-footer-widget footer_2">
-                        <h4>Our Gallery</h4>
-                        <div class="footer_img">
-                            <a href="#"><img src="img/footer_img/footer_1.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_2.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_3.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_4.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_5.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_6.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_7.png" alt=""></a>
-                            <a href="#"><img src="img/footer_img/footer_8.png" alt=""></a>
+                        <h4>Others</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="join_professional.html">Join us as a professional</a>
+                                </li>
+                                <li>
+                                    <a href="referral.html">Refer a friend</a>
+                                </li>
+                            </ul>
                         </div>
+                        <h4 style="margin-top: 50px;">Information</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="terms_conditions.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="privacy_policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="cancellation.html">Cancellation Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-md-4">
+
+                <div class="col-xl-4 col-sm-6 col-md-4">
                     <div class="single-footer-widget footer_2">
                         <h4>Contact info</h4>
-                        <div class="contact_info"> 
-                            <p>4361 Morningview Lane Artland , Street
-                                    Latimer, IA 50452 / 23654</p>
-                            <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
+                        <div class="contact_info">
+                            <p>Address Address Address Address Address Address Address Address Address Address Address
+                                Address Address
+                                Address Address Address Address Address Address Address</p>
+                            <p><span> Address :</span> Delhi </p>
+                            <p><span> Phone :</span> +91 9876543210</p>
+                            <p><span> Email : </span>support@canstruct.com </p>
+                            <p>&#169; 2020 Canstruct All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright_part_text text-center">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </footer>
     <!-- footer part end-->
+
 
     <!-- jquery plugins here-->
     <script src="js/jquery-1.12.1.min.js"></script>
