@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Canstruct</title>
+    <link rel="icon" href="images/logoTransparent.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo" width="160">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="ti-menu"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="project.html">Our Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#howitwork">How it Works</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="about.html">About Us</a>
+                                        <a class="dropdown-item" href="join_professional.html">Join us as a
+                                            professional</a>
+                                        <a class="dropdown-item" href="#">Construction for Business</a>
+                                    </div>
+                                </li>
+
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" href="contact.html">LET'S BUILD</a>
+                                </li>
+                                <div class="vl"></div>
+                                <li class="nav-item" id="number">
+                                    <a class="nav-link" href="#">+91 9876543210</a>
+                                </li>
+                                <li class="nav-item" id="contactus">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+    <section class="padding_bottom">
+        <div class="section_tittle container padding_top">
+            <h2>Cost Estimator</h2>
+            <p>Our experts will get back to you within 12 hours. Choose the type of construction below.</p>
+        </div>
+
+        <div class="container">
+            <div class="site-small-container">
+                <form class="mt-2 form form-two-col-web" autocomplete="off">
+                    <div class="form__group">
+                        <h3>Delhi</h3><label for="city" class="form__label">City*</label>
+                    </div>
+                    <div class="form__group input-with-select">
+                        <div class="input-wrapper"><input type="number" id="area" min="0" class="form__field"
+                                placeholder="Super Built Up Area (sq.ft)*"><label for="area" class="form__label">Super
+                                Built Up
+                                Area (sq.ft)*</label></div>
+                    </div>
+                    <div class="form__group"><select name="noOfCarParking" id="noOfCarParking" class="form__field">
+                            <option value="0">00</option>
+                            <option selected="" value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                        </select><label for="noOfCarParking" class="form__label">No Of Car Parking (130
+                            sq.ft/unit)*</label></div>
+                    <div class="form__group">
+                        <div class="input-wrapper"><input type="number" min="0" id="areaOfBalconyAndUtility"
+                                class="form__field" placeholder="Balcony &amp; Utility Area (sq.ft)*"><label
+                                for="areaOfBalconyAndUtility" class="form__label">Balcony
+                                &amp; Utility Area
+                                (sq.ft)*</label></div>
+                    </div>
+                    <div class="wrong_input hidden">
+                        <p>*Sum of Car parking and Balcony & Utility area cannot exceed Super built up area</p>
+                    </div>
+                    <div class="form__action__btns"><a href="javascript:;" onclick="calculate()" class="btn_1">Estimate
+                            Cost<span class="icon-arrow-right"></span></a></div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section_padding cost_estimator hidden">
+        <div class="container">
+            <h2 class="section-tittle">Your Cost Estimate</h2>
+            <div class="your-cost-estimate__row row">
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Budget Package - ₹&nbsp;1,535/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;1,535/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Budget_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;921/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Budget_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;921/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Budget_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Budget_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Basic Package - ₹&nbsp;1,650/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;1,650/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Basic_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;990/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Basic_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;990/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Basic_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Basic_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Classic Package - ₹&nbsp;1,765/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;1,765/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Classic_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;1,059/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Classic_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;1,059/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Classic_Balcony">92,100</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Classic_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Premium Package - ₹&nbsp;1,865/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;1,865/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Premium_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;1,119/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Premium_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;1,119/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Premium_Balcony">92,100</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Premium_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Royal Package - ₹&nbsp;1,990/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;1,990/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Royal_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;1,194/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Royal_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;1,194/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Royal_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Royal_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Imperia Package - ₹&nbsp;2,150/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up">770</span> sq.ft * ₹&nbsp;2,150/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Imperia_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking">1</span> * 130 sq.ft * ₹&nbsp;1,290/sq.ft</p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span id="Imperia_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost">100</span> sq.ft * ₹&nbsp;1,290/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item__col"><strong><span
+                                                id="Imperia_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="list-item__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item__col"><strong class="total text-primary"><span
+                                                id="Imperia_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pre-Footer-->
+    <section class="section_padding_pre-footer">
+        <div class="container overall">
+            <div class="pre-footer_text">
+                <h1>Hire the best construction services</h1>
+                <div class="row feature">
+                    <div class="col-sm-2 mb-4">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_3.svg" /></div>
+                            <div class="h2 flex-child">100</div>
+                        </div>
+                        <p>Total Units</p>
+                    </div>
+                    <div class="col-sm-2 mb-4">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_1.svg" /></div>
+                            <div class="h2 flex-child">220</div>
+                        </div>
+                        <p>Quality Checks</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_4.svg" /></div>
+                            <div class="h2 flex-child">10</div>
+                        </div>
+                        <p>Years Warranty</p>
+                    </div>
+                </div>
+                <div class="pre-footer_btn">
+                    <a class="btn_2" href="contact.html">LET'S BUILD</a>
+                </div>
+            </div>
+
+        </div>
+        <figure class="lets-build__illustration">
+            <div class="lazyload-wrapper"><img src="images/ic-letbuild.svg" class="filter-yellow"></div>
+        </figure>
+    </section>
+    <!--Pre-Footer-->
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Site Map</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="index.html#howitwork">How it Works</a>
+                                </li>
+                                <li>
+                                    <a href="project.html">Our Projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html#ourservices">Our Services</a>
+                                </li>
+                                <li>
+                                    <a href="quality.html">Quality Elevation</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Others</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="join_professional.html">Join us as a professional</a>
+                                </li>
+                                <li>
+                                    <a href="referral.html">Refer a friend</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 style="margin-top: 50px;">Information</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="terms_conditions.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="privacy_policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="cancellation.html">Cancellation Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact info</h4>
+                        <div class="contact_info">
+                            <p>Address Address Address Address Address Address Address Address Address Address Address
+                                Address Address
+                                Address Address Address Address Address Address Address</p>
+                            <p><span> Address :</span> Delhi </p>
+                            <p><span> Phone :</span> +91 9876543210</p>
+                            <p><span> Email : </span>support@canstruct.com </p>
+                            <p>&#169; 2020 Canstruct All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    <script src="js/cost-calculate.js"></script>
+</body>
+
+</html>

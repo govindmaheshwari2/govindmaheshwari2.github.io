@@ -959,3 +959,201 @@ a:active {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+.site-small-container {
+  max-width: 37.95rem !important;
+  min-width: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.2rem;
+}
+
+.form.form-two-col-web {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 37.95rem;
+  margin: 0 -1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+.form.form-two-col-web .form__group,
+.form.form-two-col-web .form__row {
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.form__group {
+  position: relative;
+  padding: 0.9375rem 0 0;
+  margin-bottom: 1.75rem;
+}
+.form__field {
+  font-size: 0.9rem;
+  height: 2.05rem;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 1.125rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  color: #1d1a12;
+  height: 2.4375rem;
+  margin-top: 5px;
+}
+
+.form__field:focus {
+  border-bottom: 1px solid #ffc42e;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.875rem;
+  color: #1d1a12;
+  line-height: 1.29;
+  opacity: 0.6;
+}
+
+.form__group h3 {
+  text-align: left;
+}
+
+.form-two-col-web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.your-cost-estimate__col {
+  margin-bottom: 0.75rem !important;
+  flex-basis: 100% !important;
+  padding: 0 0.375rem;
+}
+
+.your-cost-estimate__col a {
+  text-decoration: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.your-cost-estimate__col__title {
+  font-size: 0.7rem;
+}
+
+.your-cost-estimate__col__title {
+  background-color: #112327;
+  padding: 0.75rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+.your-cost-estimate__col__details {
+  padding: 1rem 0.75rem;
+}
+.your-cost-estimate__col__details,
+.orange-faded-bg {
+  background-color: rgba(255, 80, 41, 0.05);
+}
+
+ul {
+  list-style: none;
+}
+.your-cost-estimate__col .list .list-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.your-cost-estimate__col .list .list-item {
+  justify-content: space-between;
+}
+
+.your-cost-estimate__col .list .list-item,
+.d-flex {
+  display: flex !important;
+}
+
+.your-cost-estimate__col .list .list-item__col:first-child {
+  width: 67%;
+  padding-right: 0.9375rem;
+}
+
+.your-cost-estimate__col .list .list-item__col {
+  font-size: 0.7rem;
+}
+
+.your-cost-estimate__col .list .list-item__col strong {
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+}
+.your-cost-estimate__col .list .list-item__col strong {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: bolder;
+  color: #1d1a12;
+}
+
+.your-cost-estimate__col .list .list-item__col strong {
+  display: block !important;
+}
+.your-cost-estimate__col .list .list-item__col .small {
+  font-size: 0.7rem;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #1d1a12;
+}
+
+.your-cost-estimate__col .list .list-item:last-child {
+  border-top: 0.0625rem solid rgba(53, 47, 34, 0.1);
+  padding-top: 1rem;
+}
+
+.your-cost-estimate__col:hover .your-cost-estimate__col__title {
+  background-color: #ffc42e;
+  color: #112327;
+}
+.your-cost-estimate__col__title {
+  font-size: 0.9rem;
+}
+.your-cost-estimate__col {
+  margin-bottom: 0.75rem !important;
+  flex-basis: 100% !important;
+  padding: 0 0.375rem;
+}
+
+.your-cost-estimate__row div[class*="col-"] {
+  padding: 0 10px;
+}
+
+.text-primary {
+  font-size: 60px;
+}
+
+.total {
+  color: #112327 !important;
+}
+
+.wrong_input p {
+  margin-bottom: 20px;
+  color: #ffc42e;
+}
+
+.hidden {
+  display: none;
+}
