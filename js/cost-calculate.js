@@ -134,3 +134,48 @@ function imperiaPackage(build_up,balcony,noOfCarParking){
         $('.cost_estimator').addClass('hidden');
     }
 }
+
+
+function comparePackage(){
+    var compare1 = document.getElementById("compare-one").options.selectedIndex;
+    $("#compare-two option").prop('disabled', false);
+    document.getElementById("compare-two").options[compare1].disabled = true;
+    var compare2 = document.getElementById("compare-two").options.selectedIndex;
+    $("#compare-one option").prop('disabled', false);
+    document.getElementById("compare-one").options[compare2].disabled = true;
+
+    $('.budgetD').addClass('hidden');
+        $('.basicD').addClass('hidden');
+        $('.classicD').addClass('hidden');
+        $('.PremiumD').addClass('hidden');
+        $('.RoyalD').addClass('hidden');
+        $('.ImperiaD').addClass('hidden');
+
+    if(compare1==0){
+        $('.package-container-1 .budgetD').removeClass('hidden');
+    }else if(compare1==1){
+        $('.package-container-1 .basicD').removeClass('hidden');
+    }else if(compare1==2){
+        $('.package-container-1 .classicD').removeClass('hidden');
+    }else if(compare1==3){
+        $('.package-container-1 .PremiumD').removeClass('hidden');
+    }else if(compare1==4){
+        $('.package-container-1 .RoyalD').removeClass('hidden');
+    }else if(compare1==5){
+        $('.package-container-1 .ImperiaD').removeClass('hidden');
+    }
+
+    if(compare2==0){
+        $('.package-container-2 .budgetD').removeClass('hidden');
+    }else if(compare2==1){
+        $('.package-container-2 .basicD').removeClass('hidden');
+    }else if(compare2==2){
+        $('.package-container-2 .classicD').removeClass('hidden');
+    }else if(compare2==3){
+        $('.package-container-2 .PremiumD').removeClass('hidden');
+    }else if(compare2==4){
+        $('.package-container-2 .RoyalD').removeClass('hidden');
+    }else if(compare2==5){
+        $('.package-container-2 .ImperiaD').removeClass('hidden');
+    }
+}
