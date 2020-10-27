@@ -124,7 +124,7 @@
             </div>
             <div class="quality_service">
                 <div class="row">
-                    <div class="col-sm-7 col-xl-3">
+                    <div class="col-sm-4 col-xl-3 quality_btn_row">
                         <div class="single_feature">
                             <div class="single_service_q">
                                 <img src="images/iconCivilExec.png" /><br>
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 col-xl-3">
+                    <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
                             <div class="single_service_q">
                                 <img src="images/iconArchitectural.png" /><br>
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 col-xl-3">
+                    <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
                             <div class="single_service_q">
                                 <img src="images/iconMechanical.png" /><br>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 col-xl-3">
+                    <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
                             <div class="single_service_q single_service_2">
                                 <img src="images/iconProjectManagement.png" /><br>
@@ -173,7 +173,7 @@
 
             </div>
         </div>
-        <div class="row single-item align-center">
+        <div class="row single-item align-center quality_collapse">
             <div class="col-xl-6">
                 <div class="single_feature">
                     <div class="">
@@ -1084,7 +1084,7 @@
             <div class="pre-footer_text">
                 <h1>Hire the best construction services</h1>
                 <div class="row feature">
-                    <div class="col-sm-2 mb-4">
+                    <div class="col-sm-2 feature_single">
                         <div class="flex-container">
                             <div class="flex-child">
                                 <img src="img/icon/Icon_3.svg" /></div>
@@ -1092,7 +1092,8 @@
                         </div>
                         <p>Total Units</p>
                     </div>
-                    <div class="col-sm-2 mb-4">
+                    <div class="vl2"></div>
+                    <div class="col-sm-2 feature_single">
                         <div class="flex-container">
                             <div class="flex-child">
                                 <img src="img/icon/Icon_1.svg" /></div>
@@ -1100,7 +1101,8 @@
                         </div>
                         <p>Quality Checks</p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="vl2"></div>
+                    <div class="col-sm-2 feature_single">
                         <div class="flex-container">
                             <div class="flex-child">
                                 <img src="img/icon/Icon_4.svg" /></div>
@@ -1109,6 +1111,7 @@
                         <p>Years Warranty</p>
                     </div>
                 </div>
+
                 <div class="pre-footer_btn">
                     <a class="btn_2" href="contact.html">LET'S BUILD</a>
                 </div>
@@ -1240,7 +1243,9 @@
             dots: false,
             prevArrow: false,
             nextArrow: false,
-            draggable: false
+            draggable: false,
+            swipe: false
+
         });
         $('.quality_btn').on('click', function () {
             $('.quality_btn').removeClass('current');

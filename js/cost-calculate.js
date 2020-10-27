@@ -143,6 +143,8 @@ function comparePackage(){
     var compare2 = document.getElementById("compare-two").options.selectedIndex;
     $("#compare-one option").prop('disabled', false);
     document.getElementById("compare-one").options[compare2].disabled = true;
+    document.getElementById("form__label1").innerHTML = document.getElementById("compare-one").options[compare1].value;
+    document.getElementById("form__label2").innerHTML = document.getElementById("compare-two").options[compare2].value;
 
     $('.budgetD').addClass('hidden');
         $('.basicD').addClass('hidden');

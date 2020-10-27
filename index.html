@@ -98,7 +98,7 @@
               </p>
               <br><br>
               <div class="row feature">
-                <div class="col-sm-4 mb-4">
+                <div class="col-sm-4 feature_single">
                   <div class="flex-container">
                     <div class="flex-child">
                       <img src="img/icon/Icon_3.svg" class="filter-white" /></div>
@@ -106,7 +106,7 @@
                   </div>
                   <p>Total Units</p>
                 </div>
-                <div class="col-sm-4 mb-4">
+                <div class="col-sm-4 feature_single">
                   <div class="flex-container">
                     <div class="flex-child">
                       <img src="img/icon/Icon_1.svg" class="filter-white" /></div>
@@ -114,7 +114,7 @@
                   </div>
                   <p>Quality Checks</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 feature_single">
                   <div class="flex-container">
                     <div class="flex-child">
                       <img src="img/icon/Icon_4.svg" class="filter-white" /></div>
@@ -373,7 +373,7 @@
   <!-- about part end-->
 
   <!--Projects-->
-  <section class="our_service padding_top">
+  <section class="our_service padding_top padding_bottom">
     <div class="container">
       <div class="row">
         <div class="col-xl-10">
@@ -469,7 +469,7 @@
 
   <!--Packages-->
 
-  <section class="our_service padding_top padding_bottom">
+  <section class="our_service padding_top padding_bottom background_yellow">
     <div class="container">
       <div class="row">
         <div class="col-xl-10">
@@ -487,7 +487,7 @@
 
         <div class="col-sm-7 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Budget Package - <br>₹ 1,535/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -706,7 +706,7 @@
 
         <div class="col-sm-7 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Budget Package - <br>₹ 1,535/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -925,7 +925,7 @@
 
         <div class="col-sm-7 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Budget Package - <br>₹ 1,535/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -1144,7 +1144,7 @@
 
         <div class="col-sm-7 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Budget Package - <br>₹ 1,535/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -1363,7 +1363,7 @@
 
         <div class="col-sm-7 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Basic Package - <br>₹ 1,650/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -1583,7 +1583,7 @@
 
         <div class="col-sm-6 col-xl-4">
           <div class="single_feature">
-            <div class="multi_service">
+            <div class="">
               <h3>Classic Package - <br>₹ 1,765/sq.ft</h3>
               <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="false">
                 <div class="panel">
@@ -1804,13 +1804,16 @@
       </div>
 
     </div>
+    <div class="compare_package_link">
+      <a href="cost_estimator.html">COMPARE PACKAGES</a>
+    </div>
   </section>
 
   <!--packages-->
 
   <!--Review-->
-  <section class="review_part section_padding">
-    <div class="container-fluid">
+  <section class="review_part">
+    <div class="container-fluid padding_top">
       <div class="row align-items-center justify-content-end">
         <div class="col-lg-5 col-xl-4">
           <div class="tour_pack_text">
@@ -1939,7 +1942,7 @@
       <div class="pre-footer_text">
         <h1>Hire the best construction services</h1>
         <div class="row feature">
-          <div class="col-sm-2 mb-4">
+          <div class="col-sm-2 feature_single">
             <div class="flex-container">
               <div class="flex-child">
                 <img src="img/icon/Icon_3.svg" /></div>
@@ -1947,7 +1950,8 @@
             </div>
             <p>Total Units</p>
           </div>
-          <div class="col-sm-2 mb-4">
+          <div class="vl2"></div>
+          <div class="col-sm-2 feature_single">
             <div class="flex-container">
               <div class="flex-child">
                 <img src="img/icon/Icon_1.svg" /></div>
@@ -1955,7 +1959,8 @@
             </div>
             <p>Quality Checks</p>
           </div>
-          <div class="col-sm-2">
+          <div class="vl2"></div>
+          <div class="col-sm-2 feature_single">
             <div class="flex-container">
               <div class="flex-child">
                 <img src="img/icon/Icon_4.svg" /></div>
@@ -1964,6 +1969,7 @@
             <p>Years Warranty</p>
           </div>
         </div>
+
         <div class="pre-footer_btn">
           <a class="btn_2" href="contact.html">LET'S BUILD</a>
         </div>
@@ -2119,8 +2125,8 @@
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 1,
             infinite: false,
             dots: false
           }
@@ -2152,7 +2158,7 @@
     });
 
     $('.scroll').slick({
-      dots: false,
+      dots: true,
       infinite: false,
       speed: 300,
       accessibility: true,
