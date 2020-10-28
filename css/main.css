@@ -637,6 +637,12 @@ a:active {
   .referral_img {
     width: 55%;
   }
+  .referral_img img {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 .section_padding_pre-footer {
@@ -645,6 +651,13 @@ a:active {
 @media (max-width: 576px) {
   .referral_img {
     width: 100%;
+  }
+  .referral_img img {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .section_padding_pre-footer {
     padding: 25px 0px;
@@ -825,11 +838,22 @@ a:active {
   top: 0.25rem;
 }
 
+.our_service .single_feature .single_service {
+  padding: 10px;
+}
 .referral {
   background-color: #f1db9d56;
   padding: 10px;
   border: 0px;
-  height: 440px;
+  height: 120px;
+}
+
+.referral_image img {
+  width: 30%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
 }
 
 .referral img {
@@ -838,7 +862,6 @@ a:active {
 
 .referral h5 {
   color: #000;
-  margin-top: 25px;
 }
 
 .about_us_heading p {
@@ -972,9 +995,18 @@ a:active {
 
 .lets-build__illustration img {
   max-width: 100%;
-  width: 100%;
-  vertical-align: top !important;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
   transition: transform 0.2s ease;
+  display: block;
+}
+
+@media (max-width: 580px) {
+  .lets-build__illustration img {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -990,6 +1022,14 @@ a:active {
 
 .lists .list:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.pre-footer_btn {
+  margin-top: 20px;
+}
+
+.pre-footer_btn .btn_2 {
+  background-color: #ffc42e;
 }
 
 .d-flex,
@@ -1353,4 +1393,11 @@ ul {
 
 select {
   margin-top: 10px;
+}
+
+@media (max-width: 574px) {
+  .side-side {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
