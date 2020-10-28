@@ -1360,6 +1360,13 @@ ul {
   margin-top: 25px;
 }
 
+.compare_package_btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+}
+
 .compare_package_link a {
   display: flex;
   align-items: center;
@@ -1367,10 +1374,6 @@ ul {
   color: #112327;
   font-weight: 500;
   font-size: 20px;
-}
-
-.compare_package_link a:hover {
-  text-decoration: underline;
 }
 
 .background_yellow {

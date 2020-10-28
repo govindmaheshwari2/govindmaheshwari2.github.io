@@ -526,11 +526,10 @@ ul {
   padding: 13.5px 45px;
   background-color: #f9b700;
   font-size: 14px;
-  color: #fff;
+  color: #112327;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: capitalize;
-  border: 1px solid;
 }
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
@@ -2230,7 +2229,6 @@ ul {
 
 /* line 42, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
 .main_menu .main-menu-item ul .btn_1 {
-  color: #fff;
   font-size: 14px;
   padding: 11.5px 33px;
   margin-left: 75px;
