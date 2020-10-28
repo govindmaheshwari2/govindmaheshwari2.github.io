@@ -66,27 +66,60 @@ figure {
 
 #slideImg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 40%;
 }
 
 #sliderText {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: aliceblue;
-  border-bottom: 0px solid aliceblue;
+  height: 300px;
+}
+
+.sliderText {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.controller div {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#sliderText #sliderHead1,
+#sliderText #sliderHead2 {
+  background-color: #fff3d4;
+  padding: 25px;
+  text-align: left;
 }
 @media (max-width: 991px) {
   #slideImg {
-    width: 100%;
+    width: 80%;
   }
   #sliderText {
     width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  .sliderText {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #sliderText {
+    height: 230px;
+    padding: 0px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .controller div {
+    margin-left: 30px;
   }
 }
 .md-stepper-horizontal {
@@ -99,18 +132,19 @@ figure {
   display: table-cell;
   position: relative;
   padding: 24px;
+  width: 10%;
 }
 
 @media (max-width: 991px) {
-  .md-stepper-horizontal {
-    display: block;
-  }
+  /* .md-stepper-horizontal {
+    display: table;
+  } */
 
-  .md-stepper-horizontal .md-step {
+  /* .md-stepper-horizontal .md-step {
     display: table-row-group;
-  }
+  } */
 
-  .float-container {
+  /* .float-container {
     display: flex;
     border: 3px solid #fff;
   }
@@ -123,7 +157,7 @@ figure {
   }
   .float-child.first {
     width: 20%;
-  }
+  } */
 }
 
 .md-stepper-horizontal .md-step:active {
@@ -220,11 +254,11 @@ figure {
 @media (max-width: 991px) {
   .md-stepper-horizontal .md-step .md-step-bar-left,
   .md-stepper-horizontal .md-step .md-step-bar-right {
-    border: 0px solid #dddddd;
+    border: 1px solid #dddddd;
   }
   .md-stepper-horizontal .md-step .md-step-title {
     margin-top: 3px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     padding-bottom: 16px;
   }
@@ -1142,6 +1176,10 @@ a:active {
 
 .panel .panel-body {
   background-color: #fff3d4;
+}
+
+.compare-package-main .panel .panel-body {
+  background-color: #fff;
 }
 
 @media (max-width: 581px) {
