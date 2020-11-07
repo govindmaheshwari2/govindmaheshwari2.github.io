@@ -18,10 +18,11 @@ h4 {
 #text {
   color: #ffffff;
   padding: 10px;
-  background-color: #484849;
+  background-color: #112327;
   margin-left: 10px;
   margin-right: 10px;
   transition: 00.3s linear;
+  border-top: 2px solid #ffb700;
 }
 
 .image {
@@ -60,8 +61,8 @@ figure {
 }
 
 .image #zoom-In:hover h4 {
-  background-color: aliceblue;
-  color: #3a3939;
+  background-color: #ffb700;
+  color: #112327;
 }
 
 #slideImg {
@@ -78,7 +79,6 @@ figure {
   width: 100%;
   text-align: center;
   padding: 20px;
-  height: 300px;
 }
 
 .sliderText {
@@ -87,15 +87,36 @@ figure {
 }
 
 .controller div {
-  justify-content: space-evenly;
   display: flex;
+}
+
+.controller div .btn_1 {
+  margin-left: 10px;
+  font-size: 20px;
+  width: 160px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #112327;
+  color: #fff;
+}
+
+.controller div :first-child {
+  border: #112327 solid 2px;
+  background-color: #fff;
+  color: #112327;
+}
+
+.controller div .btn_1:hover {
+  background-color: #f9b700;
 }
 
 #sliderText #sliderHead1,
 #sliderText #sliderHead2 {
-  background-color: #fff3d4;
+  background-color: #fff;
   padding: 25px;
   text-align: left;
+  font-size: 18px;
 }
 @media (max-width: 991px) {
   #slideImg {
@@ -113,20 +134,21 @@ figure {
     padding-right: 0px;
   }
   #sliderText {
-    height: 230px;
     padding: 0px;
     margin-left: 30px;
     margin-top: 20px;
   }
   .controller div {
-    margin-left: 30px;
+    margin-left: 6px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 .md-stepper-horizontal {
   display: table;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: ##fff3d4;
 }
 .md-stepper-horizontal .md-step {
   display: table-cell;
@@ -179,22 +201,24 @@ figure {
   display: none;
 }
 .md-stepper-horizontal .md-step .md-step-circle {
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  background-color: #999999;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  background-color: #fff;
   border-radius: 50%;
+  padding-top: 13px;
   text-align: center;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 600;
-  color: #ffffff;
+  color: #112327;
 }
 .md-stepper-horizontal.green .md-step.active .md-step-circle {
   background-color: #00ae4d;
 }
 .md-stepper-horizontal.orange .md-step.active .md-step-circle {
   background-color: #f9b700;
+  border: 1px #112327 solid;
 }
 .md-stepper-horizontal .md-step.active .md-step-circle {
   background-color: rgb(33, 150, 243);
@@ -221,7 +245,7 @@ figure {
 }
 .md-stepper-horizontal .md-step .md-step-title {
   margin-top: 16px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 .md-stepper-horizontal .md-step .md-step-title,
@@ -246,7 +270,7 @@ figure {
 .md-stepper-horizontal .md-step .md-step-bar-left,
 .md-stepper-horizontal .md-step .md-step-bar-right {
   position: absolute;
-  top: 36px;
+  top: 52px;
   height: 1px;
   border-top: 1px solid #dddddd;
 }
@@ -258,7 +282,7 @@ figure {
   }
   .md-stepper-horizontal .md-step .md-step-title {
     margin-top: 3px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 16px;
   }
@@ -266,12 +290,12 @@ figure {
 .md-stepper-horizontal .md-step .md-step-bar-right {
   right: 0;
   left: 50%;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .md-stepper-horizontal .md-step .md-step-bar-left {
   left: 0;
   right: 50%;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 h3 {
@@ -282,13 +306,14 @@ h3 {
   padding-bottom: 6px;
   margin-bottom: 6px;
   font-weight: 400;
+  margin-bottom: 0px;
+  background-color: #f9b700;
 }
 
 .show {
   /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
     0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); */
   border-radius: 4px;
-  margin-top: -10px;
   margin-bottom: 10px;
 }
 
@@ -596,6 +621,7 @@ a:active {
 
 .contactus_text {
   color: #fff;
+  font-weight: normal;
 }
 
 /* counter */
@@ -653,6 +679,7 @@ a:active {
 
 .referral_btn .btn_2 {
   margin-top: 25px;
+  margin-left: 0px;
 }
 /* 
   .referral_btn {
@@ -1064,6 +1091,7 @@ a:active {
 
 .pre-footer_btn .btn_2 {
   background-color: #ffc42e;
+  margin-left: 0px;
 }
 
 .d-flex,
@@ -1252,6 +1280,14 @@ a:active {
 ul {
   list-style: none;
 }
+.list {
+  background-color: #fff;
+}
+
+.lists .list,
+.your-cost-estimate__col__details .list {
+  background-color: transparent;
+}
 .your-cost-estimate__col .list .list-item:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -1410,7 +1446,6 @@ ul {
   align-items: center;
   justify-content: center;
   color: #112327;
-  font-weight: 500;
   font-size: 20px;
 }
 
@@ -1441,4 +1476,39 @@ select {
     flex: 0 0 50%;
     max-width: 50%;
   }
+}
+
+.center_heading {
+  width: 100%;
+  text-align: center;
+}
+
+.center_heading .section_tittle h2 {
+  font-family: Oswald;
+}
+
+.font_family_oswald {
+  font-family: Oswald;
+}
+
+.heading_center {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (max-width: 771px) {
+  .heading_center {
+    width: auto;
+  }
+}
+
+.panel-title,
+.panel-collapse {
+  margin-bottom: 0px;
+}
+
+.slick-dots {
+  background-color: #fff3d4;
 }

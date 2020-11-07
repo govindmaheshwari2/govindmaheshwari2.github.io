@@ -530,13 +530,14 @@ ul {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_1:hover {
   color: #112327 !important;
   background-color: #ebe5e5;
-  border: #112327;
+  border: #112327 solid 2px;
 }
 
 @media (max-width: 576px) {
@@ -579,13 +580,14 @@ ul {
   font-size: 15px;
   font-weight: 500;
   margin-left: 10px;
+  font-weight: bold;
 }
 
 /* line 68, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_button.scss */
 .btn_2:hover {
   color: #fff !important;
   background-position: right center;
-  border: 1px solid transparent;
+  border: 2px solid #112327;
 }
 
 @media (max-width: 576px) {
@@ -2358,7 +2360,7 @@ ul {
   overflow: hidden;
   background-image: url(../images/Hero_Image.png);
   background-repeat: no-repeat;
-  background-size: content;
+  background-size: 100%;
   background-position: top;
 }
 
@@ -2367,6 +2369,7 @@ ul {
   .banner_part {
     height: 750px;
     background-color: #f7f7f7;
+    background-size: auto;
   }
 }
 
@@ -2465,7 +2468,7 @@ ul {
 
 /* line 76, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_banner.scss */
 .banner_part .banner_text .btn_1 {
-  margin-top: 44px;
+  margin-bottom: 44px;
 }
 
 /**************** hero part css end ****************/
@@ -3260,9 +3263,10 @@ ul {
 
 /* line 63, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_review.scss */
 .review_part .tour_pack_text h2 {
-  font-size: 60px;
-  margin-bottom: 30px;
+  font-size: 65px;
+  margin-bottom: 0px;
   text-transform: capitalize;
+  font-family: Oswald;
 }
 
 @media (max-width: 991px) {
