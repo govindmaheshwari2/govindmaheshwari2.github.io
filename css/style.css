@@ -6353,6 +6353,10 @@ h6 {
   background-size: cover;
 }
 
+.referral_bg {
+  background-image: url("../img/breadcrumb.png");
+}
+
 .amout_us_bg {
   background-image: url("../images/About_Us.png");
 }
