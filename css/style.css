@@ -2212,9 +2212,7 @@ ul {
 .main_menu .main-menu-item ul li .nav-link {
   color: #0c2e60;
   font-size: 15px;
-  padding: 0px 24px;
-  font-family: "Roboto", sans-serif;
-  text-transform: capitalize;
+  padding: 0px 21px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2244,7 +2242,7 @@ ul {
 
 /* line 62, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
 .dropdown .dropdown-item {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* line 65, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_menu.scss */
@@ -6350,10 +6348,25 @@ h6 {
 
 /* line 1, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_breadcrumb.scss */
 .breadcrumb_bg {
-  background-image: url("../img/breadcrumb.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.amout_us_bg {
+  background-image: url("../images/About_Us.png");
+}
+
+.quality_bg {
+  background-image: url("../images/Quality_Checks.png");
+}
+
+.contact_us_bg {
+  background-image: url("../images/Contact_Us.png");
+}
+
+.join_us_bg {
+  background-image: url("../images/Join_Us.png");
 }
 
 /* line 5, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Pexcon Construction/190 Pexcon Construction html/sass/_breadcrumb.scss */

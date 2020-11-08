@@ -11,6 +11,21 @@
   display: none;
 }
 
+.filter-white {
+  filter: invert(100%) sepia(98%) saturate(8%) hue-rotate(136deg)
+    brightness(103%) contrast(102%);
+}
+
+.filter-yellow {
+  filter: invert(90%) sepia(95%) saturate(919%) hue-rotate(730deg)
+    brightness(120%) contrast(92%);
+}
+
+.filter-blue {
+  filter: invert(89%) sepia(11%) saturate(2471%) hue-rotate(144deg)
+    brightness(97%) contrast(91%);
+}
+
 h4 {
   color: #3a3939;
 }
@@ -494,7 +509,7 @@ a:active {
 
 .quality_image {
   /* background: rgb(17, 35, 39, 0.5) url(../images/qualitybg.png); */
-  background: #112327;
+  background: #fff;
   background-repeat: no-repeat;
   background-size: content;
   position: relative;
@@ -510,7 +525,6 @@ a:active {
   text-align: center;
   font: normal normal bold 26px;
   letter-spacing: 0px;
-  color: #ffffff;
   opacity: 1;
 }
 
@@ -526,6 +540,8 @@ a:active {
 
 .quality_service .row {
   justify-content: space-around;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .quality_service .row div[class*="col-"] {
   padding: 0px;
@@ -539,15 +555,18 @@ a:active {
 }
 .single_service_q {
   margin-top: 50px;
+  padding-top: 50px;
   justify-content: center;
   display: inline-block;
+  border: solid 3px #ffb700;
 }
 
 .quality_btn {
   margin-top: 20px;
   display: flex;
-  background-color: #fff;
-  border: 1px solid #fff;
+  /* background-color: #fff; */
+  /* border: 1px solid #fff; */
+  width: 100%;
   color: #112327;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -556,10 +575,13 @@ a:active {
   background-size: 200% auto;
   font-size: 15px;
   font-weight: 500;
-  width: 210px;
   height: 60px;
   align-items: center;
   justify-content: center;
+}
+
+.single_service_q {
+  width: 70%;
 }
 
 @media (max-width: 991px) {
@@ -568,15 +590,29 @@ a:active {
     margin-right: auto;
     margin-top: 20px;
     padding: 5px;
-    width: 80%;
+    width: 100%;
+    line-height: 1.2;
+  }
+  .single_service_q {
+    width: 100%;
   }
 }
 
-.quality_btn:hover,
-.current {
-  color: #112327;
-  background-color: #ffc42e;
-  border: 1px solid #fff;
+.current div,
+.current div p {
+  color: #fff;
+  background-color: #112327;
+  /* border: 1px solid #fff; */
+}
+.quality_box div:hover {
+  background-color: #ffb700;
+}
+.current div,
+.quality_box div:hover {
+  border: solid 3px #112327;
+}
+.current div:hover {
+  background-color: #112327;
 }
 
 .quality_see_all {
@@ -644,16 +680,6 @@ a:active {
   width: 30px;
   margin: auto;
   display: block;
-}
-
-.filter-white {
-  filter: invert(100%) sepia(98%) saturate(8%) hue-rotate(136deg)
-    brightness(103%) contrast(102%);
-}
-
-.filter-yellow {
-  filter: invert(90%) sepia(95%) saturate(919%) hue-rotate(730deg)
-    brightness(120%) contrast(92%);
 }
 
 /*Referral*/
@@ -1457,7 +1483,7 @@ ul {
   background-color: #fff3d4;
 }
 .quality_collapse {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -1485,10 +1511,14 @@ select {
 
 .center_heading .section_tittle h2 {
   font-family: Oswald;
+  text-transform: uppercase;
 }
 
+.nav-link,
+.dropdown-item,
 .font_family_oswald {
   font-family: Oswald;
+  text-transform: uppercase;
 }
 
 .heading_center {

@@ -87,7 +87,7 @@
     <!-- Header part end-->
 
     <!-- breadcrumb start-->
-    <section class="breadcrumb breadcrumb_bg align-items-center">
+    <section class="breadcrumb breadcrumb_bg quality_bg align-items-center">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-sm-12">
@@ -104,7 +104,7 @@
     <!-- breadcrumb start-->
 
     <!--Section Start-->
-    <section class="quality_section padding_top">
+    <section class="quality_section">
 
         <div class="quality_data">
             <div class="quality_check">
@@ -115,7 +115,7 @@
         </div>
         <div class="quality_image">
             <div class="quality_info">
-                <h2>EXPERT CERTIFIED</h2>
+                <img src="images/ExpertCertified.svg" class="center_heading" style="width: 50%;" /><br><br>
                 All our projects in execution will be assessed and certified on the same quality standards. Our
                 objective is to
                 ensure definitive quality norms are adhered to at all stages of construction with maximum efficiency and
@@ -126,42 +126,50 @@
                 <div class="row">
                     <div class="col-sm-4 col-xl-3 quality_btn_row">
                         <div class="single_feature">
-                            <div class="single_service_q">
-                                <img src="images/iconCivilExec.png" /><br>
-                                <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',0,true);"
-                                    class="quality_btn current">CIVIL
-                                    EXECUTION</a>
-                            </div>
+                            <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',0,true);"
+                                class="quality_box current">
+                                <div class="single_service_q">
+                                    <img src="images/iconCivilExec.png" class="quality_img" /><br>
+                                    <p class="quality_btn">CIVIL
+                                        EXECUTION</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
-                            <div class="single_service_q">
-                                <img src="images/iconArchitectural.png" /><br>
-                                <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',1,true);"
-                                    class="quality_btn">ARCHITECTURAL,
-                                    STRUCTURAL COMPLIANCE</a>
-                            </div>
+                            <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',1,true);"
+                                class="quality_box">
+                                <div class="single_service_q">
+                                    <img src="images/iconArchitectural.png" class="filter-blue" /><br>
+                                    <p class="quality_btn">ARCHITECTURAL,
+                                        STRUCTURAL COMPLIANCE</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
-                            <div class="single_service_q">
-                                <img src="images/iconMechanical.png" /><br>
-                                <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',2,true);"
-                                    class="quality_btn">MECHANICAL,
-                                    ELECTRICAL, PLUMBING</a>
-                            </div>
+                            <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',2,true);"
+                                class="quality_box">
+                                <div class="single_service_q">
+                                    <img src="images/iconMechanical.png" class="filter-blue" /><br>
+                                    <p class="quality_btn">MECHANICAL,
+                                        ELECTRICAL, PLUMBING</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-7 col-xl-3 quality_btn_row">
                         <div class="single_feature">
-                            <div class="single_service_q single_service_2">
-                                <img src="images/iconProjectManagement.png" /><br>
-                                <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',3,true);"
-                                    class="quality_btn">PROJECT
-                                    MANAGEMENT</a>
-                            </div>
+                            <a href="javascript:;" onclick=" $('.single-item').slick('slickGoTo',3,true);"
+                                class="quality_box">
+                                <div class="single_service_q single_service_2">
+                                    <img src="images/iconProjectManagement.png" class="filter-blue" /><br>
+                                    <p class="quality_btn">PROJECT
+                                        MANAGEMENT</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1247,9 +1255,11 @@
             swipe: false
 
         });
-        $('.quality_btn').on('click', function () {
-            $('.quality_btn').removeClass('current');
+        $('.quality_box').on('click', function () {
+            $('.quality_box').removeClass('current');
             $(this).addClass('current');
+            $('.quality_box div img').addClass('filter-blue');
+            $('.current div img').removeClass('filter-blue');
         });
     </script>
 </body>
