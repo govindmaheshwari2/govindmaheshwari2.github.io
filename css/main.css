@@ -1512,3 +1512,7 @@ select {
 .slick-dots {
   background-color: #fff3d4;
 }
+
+.background-white .slick-dots {
+  background-color: #fff;
+}
