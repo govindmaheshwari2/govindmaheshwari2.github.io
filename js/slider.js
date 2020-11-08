@@ -13,7 +13,7 @@ if(select==1){
     slider2.classList.remove("active");
     slider3.classList.remove("active");
     slider4.classList.remove("active");
-
+    current=1;
     // image.src="images/how-it-worksks-2.png";
    // sliderHead.innerHTML = "* Construction Package Finalised by Customer";
     sliderHead1.innerHTML = "1.1 Construction Package Finalised by Customer";
@@ -23,7 +23,7 @@ if(select==1){
     slider2.classList.add("active");
     slider3.classList.remove("active");
     slider4.classList.remove("active");
-
+  current=2;
     // image.src="images/how-it-works-4.png";
     sliderHead1.innerHTML = "2.1 Drawing, Design discussions & Finalizing";
     sliderHead2.innerHTML = "2.2 Main Agreement signed";
@@ -32,7 +32,7 @@ if(select==1){
     slider2.classList.add("active");
     slider3.classList.add("active");
     slider4.classList.remove("active");
- 
+ current=3;
     // image.src="images/how-it-works-5.png";
     sliderHead1.innerHTML = "3.1 Project Schedule Creation & Excution";
     sliderHead2.innerHTML = "3.2 Monthly Cash-flow created";
@@ -41,7 +41,7 @@ if(select==1){
     slider2.classList.add("active");
     slider3.classList.add("active");
     slider4.classList.add("active");
-
+current=4;
     // image.src="images/how-it-works-3.png";
     sliderHead1.innerHTML = "4.1 Progress tracking and audit";
     sliderHead2.innerHTML = "4.2 Project completion & Handover";
