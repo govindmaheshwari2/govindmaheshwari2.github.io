@@ -1,296 +1,1252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Canstruct</title>
-    <link rel="icon" href="images/logoTransparent.png">
+    <style>
+        /* $Id: $ */
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background-attachment: fixed;
+	color: #444444;
+	font: 75%/1.3 Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+}
+
+input, input[type="text"], input[type="search"], isindex, textarea, button {
+	outline:none;
+	margin:0 auto;
+	padding:5px 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+img, a {
+	border:0px;
+	outline:none;
+	color:#3a6cae;
+	text-decoration:none;
+}
+img, a:hover {
+	text-decoration:underline;
+}
+.zf-flLeft {
+	float:left;
+}
+.zf-flRight {
+	float:right;
+}
+.zf-clearBoth {
+	clear:both;
+}
+ol, ul {
+	list-style: none outside none;
+}
+.zf-normalText {
+	font-size:13px;
+	line-height:1.5;
+}
+.zf-smallText {
+	font-size:0.9em;
+	font-weight:normal;
+}
+.zf-smallHeading {
+	font-size:18px;
+}
+.zf-heading {
+	font-size:2em;
+}
+.zf-subHeading {
+	font-size:1.5em;
+}
+.zf-boldText, .zf-boldText a {
+	font-weight:bold;
+	text-decoration:none;
+}
+.zf-italicText {
+	font-style:italic;
+}
+.zf-heading a {
+	text-decoration:underline;
+}
+.zf-heading a:hover {
+	text-decoration:none;
+}
+.zf-blodText {
+	font-weight:bold;
+}
+.zf-overAuto {
+	overflow:auto;
+}
+.zf-split {
+	color: #8B9193;
+	padding: 0 3px;
+}
+
+.zf-backgroundBg {
+	background:#f5f5f5;
+}
+
+.zf-templateWidth {
+	margin:1% auto;	
+}
+
+.zf-templateWidth { 
+	width:800px;
+	}
+
+.zf-templateWrapper {
+	background:#fff;
+	border:1px solid #d6d6d6;
+	-webkit-box-shadow: 0 0px 3px #E1E1E1;
+	-moz-box-shadow: 0 0px 3px #E1E1E1;
+	box-shadow: 0 0px 3px #E1E1E1;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+
+.zf-tempContDiv input[type="text"], .zf-tempContDiv textarea, .zf-tempContDiv .zf-pdfTextArea {
+	background:#fff;	
+	border:1px solid #e5e5e5;	
+	-webkit-border-radius:2px; 	
+	-moz-border-radius:2px;	
+	border-radius:2px;	
+	padding:5px;
+	font-size:13px;	
+}
+
+.zf-tempContDiv input[type="text"]:hover,  .zf-tempContDiv textarea:hover{	
+	border:1px solid rgba(157, 157, 157, 0.75) !important;	
+	}	
+.zf-tempContDiv input[type="text"]:focus, .zf-tempContDiv textarea:focus{	
+	border:1px solid rgba(121, 187, 238, 0.75) !important;	
+	-webkit-box-shadow:0 0 5px rgba(82, 168, 236, 0.5) !important;	
+	-moz-box-shadow:0 0 5px rgba(82, 168, 236, 0.5) !important;	
+	box-shadow:0 0 5px rgba(82, 168, 236, 0.5) !important;	
+	}
+	
+.zf-tempContDiv textarea {
+	height:75px;
+}
+.arrangeAddress .zf-addrCont  span.zf-addtwo{ width: 99% !important;float: none !important;} 		
+/**********Error Message***********/	
+.zf-errorMessage {
+	font:12px Arial, Helvetica, sans-serif;
+	color:#ff0000;
+	padding-top:5px;
+}
+
+/**********Mandatory Message***********/	
+.zf-important {
+	color:#ff0000 !important;
+	font-weight: normal;
+	margin-left:0px;
+	padding: 0;
+	font-size:13px !important;
+}
+
+/**********instruction Message***********/
+.zf-instruction {
+	color:#939393;
+	font-style:italic;
+	margin-top:3px;
+	font-size:12px;
+	overflow:visible !important;
+}	
+
+.zf-symbols {
+	padding:0 5px;
+}
+
+.zf-overflow{ overflow:hidden;}
+
+/*****************template Header Starts Here****************/
+
+.zf-tempHeadBdr {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.zf-tempHeadContBdr {
+	background: #494949;
+	border-bottom:1px solid #EAEAEA;
+	margin: 0;
+	padding:10px 25px;
+	-webkit-border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	border-radius:2px 2px 0 0;
+}
+.zf-tempHeadContBdr .zf-frmTitle {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font-size:2em;
+}
+.zf-tempHeadContBdr .zf-frmDesc {
+	color: #DDDDDD;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+/****************template Header Ends Here****************/
+
+
+.zf-subContWrap {
+	padding:0;
+	margin:10px;
+	margin-bottom:0;
+}
+
+.zf-tempFrmWrapper {
+	padding:10px 15px;
+	margin:1px 0;
+}
+
+.zf-tempFrmWrapper .zf-tempContDiv {
+	margin:0;
+	padding:0;
+}
+
+.zf-tempFrmWrapper .zf-labelName {
+	font-weight:bold;
+	font-size:13px;
+	color:#444;
+}
+
+.zf-form-sBox{ 
+	padding:4px; 
+	border:1px solid #e5e5e5; 
+	font-size:13px;
+	}
+
+.zf-name .zf-tempContDiv span, .zf-phone .zf-tempContDiv span, .zf-time .zf-tempContDiv span{
+	float: left;
+	display:block;
+}
+
+.zf-name .zf-tempContDiv span{margin-bottom:5px; margin-left: 4%;}
+.zf-name .zf-tempContDiv span.last{ margin-right:0;}
+.zf-name .zf-tempContDiv span label{ display: block;padding-top:3px;}
+.zf-name .zf-tempContDiv input[type="text"] {width:100%;}
+
+
+.zf-phone .zf-tempContDiv span label, .zf-date .zf-tempContDiv span label, .zf-time .zf-tempContDiv span label, .zf-address .zf-tempContDiv span label, .zf-geolocation .zf-tempContDiv span label, .zf-name .zf-tempContDiv span label{ 
+	font-size:11px; 
+	padding-top:3px;
+	}
+.zf-phone .zf-tempContDiv label, .zf-date .zf-tempContDiv label, .zf-time .zf-tempContDiv label, .zf-address .zf-tempContDiv label, .zf-name .zf-tempContDiv span label {
+	color:#888888;
+	}
+.zf-phone .zf-tempContDiv span label {
+	display: block;
+	padding-top:3px;
+	text-align:center;
+}
+.zf-phone .zf-tempContDiv .zf-symbols {
+	padding-top:5px;
+}
+
+
+.zf-currency .zf-tempContDiv span{ 
+	display:inline-block;
+	}
+.zf-currency .zf-tempContDiv span label {
+	display: block;
+	padding-top:3px;
+	}
+.zf-currency .zf-tempContDiv .zf-symbol {
+	font-size: 14px;
+    margin-left:5px;
+    margin-top: 4px;
+	width:auto;
+	font-weight:bold;
+	}
+
+.zf-decesion .zf-tempContDiv{ 
+	width:100% !important; 
+	margin-top:4px;
+	}
+.zf-decesion input[type="checkbox"] {
+    display: block;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    width: 13px;
+	float:left;
+	margin-top:4px;
+}
+.zf-decesion label {
+    display: block;
+    line-height:21px;
+    margin: 0px 0 0 25px !important;
+    padding-bottom: 0 !important;
+	width:95% !important;
+	float:none !important;
+	line-height:21px !important;
+	text-align:left !important;
+} 
+
+.zf-tempContDiv input[type="file"]{
+	outline:none;
+	border:1px solid #ccc;
+	margin:0 auto;
+	padding:5px;
+	width:auto;
+}
+
+
+.zf-address .zf-tempContDiv span, .zf-geolocation .zf-tempContDiv span {
+	display:block;
+	padding-bottom:15px;
+	margin-right:2%;
+	}
+	
+.zf-address .zf-tempContDiv span label, .zf-geolocation .zf-tempContDiv span label{
+	display: block;
+	padding-top:3px;
+	}	
+	
+.zf-address .zf-tempContDiv .zf-addOne, .zf-geolocation .zf-tempContDiv .zf-addOne{
+	float: none;
+	padding-bottom:15px;
+	margin-right:0;
+	}
+
+.zf-address .zf-tempContDiv .zf-addOne input, .zf-geolocation .zf-tempContDiv .zf-addOne input{
+	width:98%;
+	}
+.zf-address .zf-tempContDiv span.zf-addtwo, .zf-geolocation .zf-tempContDiv span.zf-addtwo{
+	width:48%;
+	}
+.zf-address .zf-tempContDiv span.zf-addtwo input, .zf-geolocation .zf-tempContDiv span.zf-addtwo input{
+	width:99%;
+	}	
+.zf-address .zf-tempContDiv span.zf-addtwo .zf-form-sBox{
+	width:100%;
+	}
+	
+.zf-signContainer{ 
+	margin:0; 
+	padding:0; 
+	width:100%;
+	}
+.zf-signContainer canvas{ 
+	cursor:crosshair;
+	border:1px solid #ccc; 
+	background:#fff;
+	}
+.zf-signContainer a{
+    font-size: 11px;
+    text-decoration: underline;
+	}	
+	
+.zf-section h2{
+	border-bottom:1px solid #D7D7D7;
+	font-size:22px; 
+	color:#000; 
+	font-weight:500; 
+	font-family:'Open Sans',"Lucida Grande",Arial,Helvetica,sans-serif; 
+	padding-bottom:10px;
+	}
+.zf-section p{ 
+	color:#847F7F; 
+	margin-top:10px;
+	}
+	
+.zf-note .zf-labelName{	
+	padding-top:7px;
+	}
+.zf-templateWrapper .zf-note{ 
+	overflow:hidden;
+	}
+
+.zf-date .zf-tempContDiv span label {
+	display: block;
+	padding-top:3px;
+	text-align:left;
+}
+
+.zf-subDate{ margin-right:10px;}
+.zf-subDate label{ text-align:left !important;}
+
+.zf-time .zf-tempContDiv span label {
+	display: block;
+	padding-top:3px;
+	text-align:center;
+}
+
+.zf-time .zf-tempContDiv .zf-form-sBox{
+	min-width:58px;
+}
+
+.zf-time .zf-tempContDiv .zf-symbols {
+	padding-top:5px;
+}
+
+.zf-tempContDiv input[type="checkbox"], .zf-tempContDiv input[type="radio"] {
+	display: block;
+	height: 13px;
+	margin: 4px 0 0;
+	padding: 0;
+	width: 13px;
+}
+
+.zf-radio .zf-overflow, .zf-checkbox .zf-overflow{padding-left:2px !important;}
+
+.zf-sideBySide .zf-tempContDiv span {
+	margin: 0 15px 5px 0;
+	padding:0;
+	width:auto;
+	float: left;
+	display:block;
+}
+.zf-sideBySide .zf-tempContDiv span input[type="checkbox"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	margin-top:3px;
+	float:left;
+}
+.zf-sideBySide .zf-tempContDiv span input[type="radio"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin-top:4px;
+	padding: 0;
+	float:left;
+}
+.zf-sideBySide .zf-tempContDiv span label {
+	line-height:21px;
+	display: block;
+	margin: 0 0 0 20px;
+	padding: 0 0 5px;
+}
+		
+
+.zf-oneColumns .zf-tempContDiv span {
+	margin:0 0 13px 0;
+	padding:0;
+	width:100%;
+	display:block;
+	clear: both;
+}
+.zf-oneColumns .zf-tempContDiv span:last-child { margin-bottom:0;}
+
+.zf-oneColumns .zf-tempContDiv span input[type="checkbox"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin:0;
+	padding: 0;
+	margin-top:3px;
+	float:left;
+}
+.zf-oneColumns .zf-tempContDiv span input[type="radio"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin-top:4px;
+	padding: 0;
+	float:left;
+}
+.zf-oneColumns .zf-tempContDiv span label {
+	line-height:19px;
+	display: block;
+	margin: 0 0 0 20px;
+	padding:0;
+	font-size:13px;
+}
+.zf-twoColumns .zf-tempContDiv span {
+	margin: 0 5px 13px 0;
+	width: 48%;
+	float: left;
+	display:block;
+}
+.zf-twoColumns .zf-tempContDiv span input[type="checkbox"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin: 0;
+	padding: 0;
+	margin-top:3px;
+	float:left;
+}
+.zf-twoColumns .zf-tempContDiv span input[type="radio"] {
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin-top:4px;
+	padding: 0;
+	float:left;
+}
+.zf-twoColumns .zf-tempContDiv span label {
+	line-height:21px;
+	display: block;
+	margin: 0 0 0 20px;
+	padding: 0 0 5px;
+}
+.zf-threeColumns .zf-tempContDiv span {
+	margin: 0 5px 13px 0;
+	width:30%;
+	float: left;
+}
+.zf-threeColumns .zf-tempContDiv span input[type="checkbox"] {
+	display:block;
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	margin-top:3px;
+	float:left;
+}
+.zf-threeColumns .zf-tempContDiv span input[type="radio"] {
+	display:block;
+	width: 13px;
+	height: 13px;
+	margin-top:4px;
+	padding: 0;
+	float:left;
+}
+.zf-threeColumns .zf-tempContDiv span label {
+	line-height:21px;
+	display: block;
+	margin: 0 0 0 20px;
+	padding: 0 0 5px;
+}
+
+.zf-mSelect select{ font-size:13px;}	
+
+.zf-fmFooter {
+	margin:0;
+	padding:25px;
+	text-align:center;
+}
+
+.zf-fmFooter .zf-submitColor{ font-size:14px; padding:4px 10px;}
+
+.zf-submitColor{
+	color: #fff;
+	border:1px solid;
+	border-color: #2F9EEC #1988D6 #1988D6;
+	background: #2596e6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f9eec), to(#1988d6));
+	background: -moz-linear-gradient(top,  #2f9eec,  #1988d6);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f9eec', endColorstr='#1988d6');
+	-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
+	text-shadow:0 1px 0 rgba(0, 0, 0, 0.25);
+	}
+	
+.zf-submitColor:hover{
+	background: #1988d6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#1988d6), to(#1988d6));
+	background: -moz-linear-gradient(top,  #1988d6,  #1988d6);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#1988d6', endColorstr='#1988d6');
+	}	   	
+
+/****************Field Small/Medium/Large Starts Here****************/
+
+.zf-small .zf-tempContDiv input[type="text"], .zf-small .zf-tempContDiv textarea, .zf-small .zf-mSelect select, .zf-small .zf-tempContDiv .zf-sliderCont, .zf-small .zf-tempContDiv .zf-pdfTextArea{
+	width:50%;
+	}
+.zf-medium .zf-tempContDiv input[type="text"], .zf-medium .zf-tempContDiv textarea, .zf-medium .zf-mSelect select, .zf-medium .zf-tempContDiv .zf-sliderCont, .zf-medium .zf-tempContDiv .zf-pdfTextArea{
+	width:75%;
+	}
+.zf-large .zf-tempContDiv input[type="text"], .zf-large .zf-tempContDiv textarea, .zf-large .zf-mSelect select, .zf-large .zf-tempContDiv .zf-sliderCont, .zf-large .zf-tempContDiv .zf-pdfTextArea{
+	width:100%;
+	}
+	
+	
+.zf-small .zf-tempContDiv .zf-form-sBox{
+	width:50%;
+	}
+.zf-medium .zf-tempContDiv .zf-form-sBox{
+	width:75%;
+	}
+.zf-large .zf-tempContDiv .zf-form-sBox{
+	width:100%;
+	}
+
+
+.zf-name .zf-tempContDiv .zf-form-sBox{
+	width:100%;
+	}
+
+.zf-namesmall .zf-nameWrapper{ width: 50%;}
+.zf-namesmall .zf-tempContDiv span{width:48%;}
+ 
+.zf-namesmall .zf-oneType .zf-salutationWrapper span{width:63%; }
+.zf-namesmall .zf-oneType .zf-salutationWrapper .zf-salutation{ width: 33%;}
+
+.zf-namesmall .zf-twoType .zf-salutationWrapper span{width:34%;margin-left:3%;}
+.zf-namesmall .zf-twoType .zf-salutationWrapper .zf-salutation{ width:26%;}
+
+.zf-namesmall .zf-threeType .zf-nameWrapper span{width:32%; margin-left:2%;}
+
+.zf-namesmall .zf-threeType .zf-salutationWrapper span{ width:100%;margin-left: 0px; float:none; margin-left: 0;}
+.zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation{ width:50%;}
+
+
+.zf-namesmall .zf-tempContDiv span:first-child{ margin-left:0;}
+
+.zf-leftAlign .zf-namesmall .zf-threeType .zf-salutationWrapper span, .zf-rightAlign .zf-namesmall	.zf-threeType .zf-salutationWrapper span{ width:100%;margin-left: 0px; float:none; margin-left: 0;}
+.zf-leftAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation, .zf-rightAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation{ width: 50%; }
+
+
+
+
+.zf-namemedium .zf-nameWrapper{ width: 75%;}
+
+.zf-namemedium .zf-tempContDiv span{width:49%; margin-left:2%;}
+
+
+    
+.zf-namemedium .zf-oneType .zf-salutationWrapper span{width:73%; }
+.zf-namemedium .zf-oneType .zf-salutationWrapper .zf-salutation{ width: 25%;}
+
+.zf-namemedium .zf-twoType .zf-salutationWrapper span{width:38%;margin-left:2%;}
+.zf-namemedium .zf-twoType .zf-salutationWrapper .zf-salutation{ width:20%;}
+
+
+.zf-namemedium .zf-threeType .zf-nameWrapper span{width:32%; margin-left:2%;}
+
+
+.zf-namemedium .zf-threeType .zf-salutationWrapper span{width:25%;margin-left:2%;}
+
+.zf-namemedium .zf-threeType .zf-salutationWrapper .zf-salutation{ width:19%;}
+
+.zf-namemedium .zf-tempContDiv span:first-child{ margin-left:0;}
+
+.zf-namelarge .zf-tempContDiv span{width:23.5%; margin-left:2%; margin-right: 0; margin-bottom: 0;}
+.zf-namelarge .zf-twoType .zf-nameWrapper span{width:49%; margin-left:2%;}
+.zf-namelarge .zf-threeType .zf-nameWrapper span{width:32%; margin-left:2%;}
+
+
+.zf-namelarge .zf-twoType .zf-salutationWrapper span{width:40%; margin-left:2%;}
+.zf-namelarge .zf-twoType .zf-salutationWrapper .zf-salutation{ width: 16%;}
+
+.zf-namelarge .zf-threeType .zf-salutationWrapper span{width:26%; margin-left:2%;}
+.zf-namelarge .zf-threeType .zf-salutationWrapper .zf-salutation{ width: 16%;}
+
+.zf-namelarge .zf-oneType .zf-salutationWrapper span{width:73%; margin-left:2%;}
+.zf-namelarge .zf-oneType .zf-salutationWrapper .zf-salutation{ width:25%;}
+
+.zf-namelarge .zf-tempContDiv span:first-child { margin-left:0 !important;}
+
+
+
+.zf-csmall	 .zf-tempContDiv input[type="text"] {
+	width:43%;
+	}
+.zf-cmedium .zf-tempContDiv input[type="text"] {
+	width:67%;
+	}
+.zf-clarge	 .zf-tempContDiv input[type="text"] {
+	width:91%;
+	} 	
+
+.zf-nsmall .zf-tempContDiv input[type="text"] {	
+	width:50%;	
+	}
+.zf-nmedium .zf-tempContDiv input[type="text"] {
+	width:75%;
+	}
+.zf-nlarge .zf-tempContDiv input[type="text"] {
+	width:100%;
+	}
+
+.zf-signSmall .zf-tempContDiv .zf-signContainer .zf-signArea {	
+	width:49%;
+	}
+.zf-signMedium .zf-tempContDiv .zf-signContainer .zf-signArea {
+	width:60%;
+	}
+.zf-signLarge .zf-tempContDiv .zf-signContainer .zf-signArea {	
+	width:74%;
+	}	
+
+.zf-addrsmall .zf-tempContDiv .zf-addrCont{ 
+	width:50%;
+	}
+.zf-addrmedium .zf-tempContDiv .zf-addrCont{ 
+	width:75%;
+	}
+.zf-addrlarge .zf-tempContDiv .zf-addrCont{ 
+	width:100%;
+	}	
+	
+	
+/****************Field Small/Medium/Large Ends Here****************/	
+
+.zf-topAlign .zf-tempFrmWrapper .zf-labelName {
+	padding-bottom:8px;
+	display:block;
+}
+
+.zf-topAlign .zf-threeColumns .zf-labelName, .zf-topAlign .zf-twoColumns .zf-labelName, .zf-topAlign .zf-oneColumns .zf-labelName, .zf-topAlign .zf-sideBySide .zf-labelName{ padding-bottom:8px;}
+
+.zf-leftAlign {
+	display:block;
+}
+.zf-leftAlign .zf-tempFrmWrapper .zf-labelName {
+	float:left;
+	width:30%;
+	line-height:20px;
+	margin-right:15px;
+}
+.zf-leftAlign .zf-tempFrmWrapper .zf-tempContDiv {
+	 margin-left: 35%;
+}
+
+.zf-leftAlign .zf-slider .zf-tempContDiv{ margin-top:6px;}
+
+.zf-leftAlign .zf-decesion .zf-tempContDiv, .zf-rightAlign .zf-decesion .zf-tempContDiv{ margin-left:0 !important;}
+
+.zf-rightAlign {
+	display:block;
+}
+.zf-rightAlign .zf-tempFrmWrapper .zf-labelName {
+	float:left;
+	width:30%;
+	line-height: 20px;
+	text-align:right;
+	margin-right:15px;
+}
+.zf-rightAlign .zf-tempFrmWrapper .zf-tempContDiv {
+	 margin-left: 35%;
+}
+.zf-matrixTable{ font-size:13px; overflow-x: scroll;padding-bottom: 15px !important;}
+.zf-matrixTable table th, .zf-matrixTable table td{padding:10px;}
+.zf-matrixTable thead th, .zf-matrixTable table td{ text-align:center;}
+.zf-matrixTable table td input[type="radio"], .zf-matrixTable table td input[type="checkbox"]{ display:inline-block;}
+.zf-matrixTable tbody th{ font-weight:normal;font-size: 13px;text-align: left;}
+.zf-matrixTable thead th { font-weight:600;font-size: 13px;}
+
+/****************Form Top Align Starts Here****************/	
+
+.zf-termsContainer{ margin:0; padding:0;}
+.zf-termsContainer .zf-termsMsg {border: 1px solid #E1E1E1;max-height: 250px; min-height:70px; overflow-y:scroll; padding:10px;  margin-bottom:6px;}
+
+.zf-termsAccept{ margin-top:2px !important;}
+.zf-termsAccept input[type="checkbox"]{ margin-top:2px !important; float:left;}
+.zf-termsAccept label{ margin-left: 20px;font-size: 13px;float: none;display: block;}
+
+.zf-termsWrapper .zf-tempContDiv{ margin-left:0 !important;}
+.zf-termsWrapper .zf-labelName{ width:100% !important; text-align:left !important; padding-bottom:8px !important;}
+
+
+.zf-medium .zf-phwrapper {
+    width: 75%;
+}
+.zf-phwrapper.zf-phNumber span {
+	width: 100% !important;
+}
+.zf-phwrapper span:first-child {
+    margin-left: 0;
+    width: 22%;
+}
+.zf-phwrapper label {
+    display: block;
+    color: #888888;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.zf-medium .zf-phonefld input[type="text"], .zf-small .zf-phonefld input[type="text"] {
+    width: 100%;
+}
+.zf-small .zf-phwrapper {
+    width: 50%;
+}
+.zf-tempFrmWrapper.zf-phone span {
+	width: auto;
+	margin: inherit;
+}
+.zf-phwrapper span {
+    margin-bottom: 10px;
+    float: left;
+    width: 76%;
+    margin-left: 2%;
+}
+.zf-descFld a{ text-decoration:underline;}
+.zf-descFld em{ font-style:italic;}
+.zf-descFld b{ font-weight:bold;}
+.zf-descFld i{ font-style: italic;}
+.zf-descFld u{ text-decoration:underline;}
+.zf-descFld ul{ margin:auto;}
+.zf-descFld ul{ list-style:disc;}
+.zf-descFld ol{ list-style:decimal;}
+.zf-descFld ul, .zf-descFld ol{margin: 10px 0;
+    padding-left: 20px;}
+
+.zf-descFld  ol.code {
+    list-style-position: outside;
+    list-style-type: decimal;
+    padding: 0 30px;
+}
+
+.zf-descFld  ol.code li {
+    background-color: #F5F5F5;
+    border-left: 2px solid #CCCCCC;
+    margin: 1px 0;
+    padding: 2px;
+}
+
+.zf-descFld  blockquote.zquote {
+    border-left: 3px solid #EFEFEF;
+    padding-left: 35px;
+}
+.zf-descFld  blockquote.zquote span.txt {
+    -moz-user-focus: ignore;
+    -moz-user-input: disabled;
+    -moz-user-select: none;
+    color: #058BC2;
+    float: left;
+    font: bold 50px Arial,Helvetica,sans-serif;
+    margin: -10px 0 0 -30px;
+}
+.zf-descFld  blockquote.block_quote {
+    background: url("../images/newQuote.gif") no-repeat scroll 12px 10px rgba(0, 0, 0, 0);
+    border-left: 3px solid #EFEFEF;
+    font: 13px/20px georgia,Arial,verdana,Helvetica,sans-serif;
+    margin: 15px 3px 15px 15px;
+    padding: 10px 10px 10px 40px;
+}
+.zf-descFld  body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin: 8px;
+}
+.note .noteCont{ overflow:hidden;}
+.note .zf-descFld{
+	overflow:hidden;
+	font-size: 13px;
+}
+
+    </style>
+    <script src="js/validation.js"></script>
+    <link rel="icon" href="images/logoTransparent.png" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <!-- themify CSS -->
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.css" />
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/flaticon.css" />
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick.css" />
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
     <!--::header part start::-->
     <header class="main_menu home_menu">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo" width="160">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="ti-menu"></span>
-                        </button>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="160" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="ti-menu"></span>
+              </button>
 
-                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
-                            id="navbarSupportedContent">
-                            <ul class="navbar-nav align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="project.html">Our Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="cost_estimator.html">Cost Estimator</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#howitwork">How it Works</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        More
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="about.html">About Us</a>
-                                        <a class="dropdown-item" href="join_professional.html">Join us as a
-                                            professional</a>
-                                    </div>
-                                </li>
+              <div
+                class="collapse navbar-collapse main-menu-item justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="project.html">Our Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cost_estimator.html"
+                      >Cost Estimator</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#howitwork"
+                      >How it Works</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="about.html">About Us</a>
+                      <a class="dropdown-item" href="join_professional.html"
+                        >Join us as a professional</a
+                      >
+                    </div>
+                  </li>
 
-                                <li class="d-none d-lg-block">
-                                    <a class="btn_1" href="contact.html">LET'S BUILD</a>
-                                </li>
-                                <div class="vl"></div>
-                                <li class="nav-item" id="number">
-                                    <a class="nav-link" href="#">+91 9876543210</a>
-                                </li>
-                                <li class="nav-item" id="contactus">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+                  <li class="d-none d-lg-block">
+                    <a class="btn_1" href="contact.html">LET'S BUILD</a>
+                  </li>
+                  <div class="vl"></div>
+                  <li class="nav-item" id="number">
+                    <a class="nav-link" href="#">+91 9876543210</a>
+                  </li>
+                  <li class="nav-item" id="contactus">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Header part end-->
 
     <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg join_us_bg align-items-center">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-sm-12">
-                    <div class="breadcrumb_tittle text-left">
-                        <h2>Join us as a professional</h2>
-                        <h4 class="contactus_text">Work with us as architect or contractor.</h4>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-12">
+            <div class="breadcrumb_tittle text-left">
+              <h2>Join us as a professional</h2>
+              <h4 class="contactus_text">
+                Work with us as architect or contractor.
+              </h4>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- breadcrumb start-->
-
+     <section>
+         <!-- www.123formbuilder.com script begins here --><script type="text/javascript" defer src="https://www.123formbuilder.com/embed/5714561.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
+     </section>
     <!--Form-->
     <section class="section_padding">
-
+      <iframe
+        frameborder="0"
+        style="min-height: 600px; width: 99%; border: none"
+        src="https://forms.zohopublic.com/webspringin/form/JoinUs/formperma/kxizmQKXUNHHcogHFLue2FwTfFnjCl3It2xDpfAxuu8"
+      ></iframe>
     </section>
     <!--Form End-->
-
+    <section class="zf-backgroundBg"><!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+        <div class="zf-templateWidth"><form action='https://forms.zohopublic.com/webspringin/form/JoinUs/formperma/kxizmQKXUNHHcogHFLue2FwTfFnjCl3It2xDpfAxuu8/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+        <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+        <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+        <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+        <ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Join Us</em></h2>
+        <p class="zf-frmDesc"></p>
+        <div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
+        <!---------template Container Starts Here---------->
+        <div class="zf-subContWrap zf-leftAlign"><ul>
+        <!---------Name Starts Here----------> 
+        <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">Name
+        <em class="zf-important">*</em>
+        </label>
+        <div 
+        class="zf-tempContDiv zf-twoType"  
+        >
+        <div
+        class="zf-nameWrapper"  
+        >
+         </span>
+        <span> <input type="text" maxlength="255" name="Name_First" fieldType=7 /><label>First</label> </span> 
+         </span> </span>
+        <span> <input type="text" maxlength="255" name="Name_Last" fieldType=7 /><label>Last</label> </span> 
+         </span> </span>
+        <div class="zf-clearBoth"></div></div><p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+        </div><div class="zf-clearBoth"></div></li><!---------Name Ends Here----------> 
+        <!---------Phone Starts Here----------> 
+        <li  class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Phone
+        </label>
+        <div class="zf-tempContDiv zf-phonefld"><div
+        class="zf-phwrapper zf-phNumber"  
+        >
+        <span> <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20" checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled=false fieldType="11" id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="1"/>
+        <label>Number</label> </span>
+        <div class="zf-clearBoth"></div></div><p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+        </div><div class="zf-clearBoth"></div></li><!---------Phone Ends Here----------> 
+        <!---------Email Starts Here---------->  
+        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Email 
+        </label>
+        <div class="zf-tempContDiv"><span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+        </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
+        <!---------Dropdown Starts Here---------->
+        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Dropdown
+        </label>
+        <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown" checktype="c1"><option selected="true" value="-Select-">-Select-</option>
+        <option value="First&#x20;Choice">First Choice</option>
+        <option value="Second&#x20;Choice">Second Choice</option>
+        <option value="Third&#x20;Choice">Third Choice</option>
+        </select><p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+        </div><div class="zf-clearBoth"></div></li><!---------Dropdown Ends Here---------->
+        </ul></div><!---------template Container Starts Here---------->
+        <ul><li class="zf-fmFooter"><button class="zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+        <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+        var zf_MandArray = [ "Name_First"]; 
+        var zf_FieldArray = [ "Name_Salutation", "Name_First", "Name_Last", "PhoneNumber_countrycode", "Email", "Dropdown"]; 
+        var isSalesIQIntegrationEnabled = false;
+        var salesIQFieldsArray = [];</script></section>
     <!--Reason to work with us-->
 
     <section class="section_padding">
-
-        <div class="container">
-            <div class="center_heading">
-                <div class="section_tittle">
-                    <h2>Reasons to love working with us</h2>
-                    <h4>We guarantee a hassle free experience for our contractors as well.</h4>
-                </div>
-            </div>
-            <div class="row details-list-row">
-                <div class="col col-sm-6 details-list-col theme-bg">
-                    <h6 class="primary-title">Brick&amp;Bolt<br>Experience</h6>
-                    <ul class="lists">
-                        <li class="list">The lead passed to professionals only from
-                            <!-- --> <span class="font-weight-bold">verified clients</span></li>
-                        <li class="list">We act as
-                            <!-- --> <span class="font-weight-bold">Escrow Account</span> <!-- -->and provide
-                            payment facilitation</li>
-                        <li class="list"><span class="font-weight-bold">Smart Working</span> <!-- -->through online
-                            contracts through out contractor app.</li>
-                        <li class="list">We have our forum page where you can post answers and
-                            <!-- --> <span class="font-weight-bold">Expand your Reach.</span></li>
-                        <li class="list">Construction material supplied across Bangalore on credit for our projects
-                        </li>
-                        <li class="list">Get a continues supply of projects based on your project execution.</li>
-                    </ul>
-                </div>
-                <div class="col col-sm-6 details-list-col ">
-                    <h6 class="primary-title">Typical<br>Experience</h6>
-                    <ul class="lists">
-                        <li class="list">No guarantee of genuine clients. High chances of
-                            <!-- --> <span class="font-weight-bold">bad experience.</span></li>
-                        <li class="list"><span class="font-weight-bold">Heavy delay in payment</span>, contractors
-                            have to keep asking</li>
-                        <li class="list"><span class="font-weight-bold">No digital tracking</span> <!-- -->of work.
-                            No contractor app for smooth working.</li>
-                        <li class="list"><span class="font-weight-bold">No Quick Growth.</span> <!-- -->Can take
-                            years to achieve recognition in the market.</li>
-                        <li class="list">Local contractors do not get good quality materials in the new areas</li>
-                        <li class="list">There is no guarantee of projects even if you do great work</li>
-                    </ul>
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="center_heading">
+          <div class="section_tittle">
+            <h2>Reasons to love working with us</h2>
+            <h4>
+              We guarantee a hassle free experience for our contractors as well.
+            </h4>
+          </div>
         </div>
-
+        <div class="row details-list-row">
+          <div class="col col-sm-6 details-list-col theme-bg">
+            <h6 class="primary-title">Brick&amp;Bolt<br />Experience</h6>
+            <ul class="lists">
+              <li class="list">
+                The lead passed to professionals only from
+                <!-- -->
+                <span class="font-weight-bold">verified clients</span>
+              </li>
+              <li class="list">
+                We act as
+                <!-- -->
+                <span class="font-weight-bold">Escrow Account</span>
+                <!-- -->and provide payment facilitation
+              </li>
+              <li class="list">
+                <span class="font-weight-bold">Smart Working</span>
+                <!-- -->through online contracts through out contractor app.
+              </li>
+              <li class="list">
+                We have our forum page where you can post answers and
+                <!-- -->
+                <span class="font-weight-bold">Expand your Reach.</span>
+              </li>
+              <li class="list">
+                Construction material supplied across Bangalore on credit for
+                our projects
+              </li>
+              <li class="list">
+                Get a continues supply of projects based on your project
+                execution.
+              </li>
+            </ul>
+          </div>
+          <div class="col col-sm-6 details-list-col">
+            <h6 class="primary-title">Typical<br />Experience</h6>
+            <ul class="lists">
+              <li class="list">
+                No guarantee of genuine clients. High chances of
+                <!-- -->
+                <span class="font-weight-bold">bad experience.</span>
+              </li>
+              <li class="list">
+                <span class="font-weight-bold">Heavy delay in payment</span>,
+                contractors have to keep asking
+              </li>
+              <li class="list">
+                <span class="font-weight-bold">No digital tracking</span>
+                <!-- -->of work. No contractor app for smooth working.
+              </li>
+              <li class="list">
+                <span class="font-weight-bold">No Quick Growth.</span>
+                <!-- -->Can take years to achieve recognition in the market.
+              </li>
+              <li class="list">
+                Local contractors do not get good quality materials in the new
+                areas
+              </li>
+              <li class="list">
+                There is no guarantee of projects even if you do great work
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Reason to work with us end-->
     <!--Pre-Footer-->
     <section class="section_padding_pre-footer">
-        <div class="container overall">
-            <div class="pre-footer_text">
-                <h1 class="font_family_oswald">Hire the best construction services</h1>
-                <div class="row feature">
-                    <div class="col-sm-2 feature_single">
-                        <div class="flex-container">
-                            <div class="flex-child">
-                                <img src="img/icon/Icon_3.svg" /></div>
-                            <div class="h2 flex-child">100</div>
-                        </div>
-                        <p>Total Units</p>
-                    </div>
-                    <div class="vl2"></div>
-                    <div class="col-sm-2 feature_single">
-                        <div class="flex-container">
-                            <div class="flex-child">
-                                <img src="img/icon/Icon_1.svg" /></div>
-                            <div class="h2 flex-child">220</div>
-                        </div>
-                        <p>Quality Checks</p>
-                    </div>
-                    <div class="vl2"></div>
-                    <div class="col-sm-2 feature_single">
-                        <div class="flex-container">
-                            <div class="flex-child">
-                                <img src="img/icon/Icon_4.svg" /></div>
-                            <div class="h2 flex-child">10</div>
-                        </div>
-                        <p>Years Warranty</p>
-                    </div>
+      <div class="container overall">
+        <div class="pre-footer_text">
+          <h1 class="font_family_oswald">
+            Hire the best construction services
+          </h1>
+          <div class="row feature">
+            <div class="col-sm-2 feature_single">
+              <div class="flex-container">
+                <div class="flex-child">
+                  <img src="img/icon/Icon_3.svg" />
                 </div>
-
-                <div class="pre-footer_btn">
-                    <a class="btn_2" href="contact.html">LET'S BUILD</a>
-                </div>
+                <div class="h2 flex-child">100</div>
+              </div>
+              <p>Total Units</p>
             </div>
+            <div class="vl2"></div>
+            <div class="col-sm-2 feature_single">
+              <div class="flex-container">
+                <div class="flex-child">
+                  <img src="img/icon/Icon_1.svg" />
+                </div>
+                <div class="h2 flex-child">220</div>
+              </div>
+              <p>Quality Checks</p>
+            </div>
+            <div class="vl2"></div>
+            <div class="col-sm-2 feature_single">
+              <div class="flex-container">
+                <div class="flex-child">
+                  <img src="img/icon/Icon_4.svg" />
+                </div>
+                <div class="h2 flex-child">10</div>
+              </div>
+              <p>Years Warranty</p>
+            </div>
+          </div>
 
+          <div class="pre-footer_btn">
+            <a class="btn_2" href="contact.html">LET'S BUILD</a>
+          </div>
         </div>
-        <figure class="lets-build__illustration">
-            <div class="lazyload-wrapper"><img src="images/Hire.png"></div>
-        </figure>
+      </div>
+      <figure class="lets-build__illustration">
+        <div class="lazyload-wrapper"><img src="images/Hire.png" /></div>
+      </figure>
     </section>
     <!--Pre-Footer-->
 
     <!-- footer part start-->
     <footer class="footer-area">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-xl-3 col-sm-6 col-md-4 side-side">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Site Map</h4>
-                        <div class="contact_info">
-                            <ul>
-                                <li>
-                                    <a href="index.html#howitwork">How it Works</a>
-                                </li>
-                                <li>
-                                    <a href="project.html">Our Projects</a>
-                                </li>
-                                <li>
-                                    <a href="cost_estimator.html">Cost Estimator</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#ourservices">Our Services</a>
-                                </li>
-                                <li>
-                                    <a href="quality.html">Quality Elevation</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-sm-6 col-md-4 side-side">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Others</h4>
-                        <div class="contact_info">
-                            <ul>
-                                <li>
-                                    <a href="join_professional.html">Join us as a professional</a>
-                                </li>
-                                <li>
-                                    <a href="referral.html">Refer a friend</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h4 style="margin-top: 30px;">Information</h4>
-                        <div class="contact_info">
-                            <ul>
-                                <li>
-                                    <a href="terms_conditions.html">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="privacy_policy.html">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQs</a>
-                                </li>
-                                <li>
-                                    <a href="cancellation.html">Cancellation Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-sm-6 col-md-4">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Contact info</h4>
-                        <div class="contact_info">
-                            <p>Address Address Address Address Address Address Address Address Address Address Address
-                                Address Address
-                                Address Address Address Address Address Address Address</p>
-                            <p><span> Address :</span> Delhi </p>
-                            <p><span> Phone :</span> +91 9876543210</p>
-                            <p><span> Email : </span>support@canstruct.com </p>
-                            <p>&#169; 2020 Canstruct All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-3 col-sm-6 col-md-4 side-side">
+            <div class="single-footer-widget footer_2">
+              <h4>Site Map</h4>
+              <div class="contact_info">
+                <ul>
+                  <li>
+                    <a href="index.html#howitwork">How it Works</a>
+                  </li>
+                  <li>
+                    <a href="project.html">Our Projects</a>
+                  </li>
+                  <li>
+                    <a href="cost_estimator.html">Cost Estimator</a>
+                  </li>
+                  <li>
+                    <a href="index.html#ourservices">Our Services</a>
+                  </li>
+                  <li>
+                    <a href="quality.html">Quality Elevation</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
 
+          <div class="col-xl-3 col-sm-6 col-md-4 side-side">
+            <div class="single-footer-widget footer_2">
+              <h4>Others</h4>
+              <div class="contact_info">
+                <ul>
+                  <li>
+                    <a href="join_professional.html"
+                      >Join us as a professional</a
+                    >
+                  </li>
+                  <li>
+                    <a href="referral.html">Refer a friend</a>
+                  </li>
+                </ul>
+              </div>
+              <h4 style="margin-top: 30px">Information</h4>
+              <div class="contact_info">
+                <ul>
+                  <li>
+                    <a href="terms_conditions.html">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="privacy_policy.html">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="cancellation.html">Cancellation Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-sm-6 col-md-4">
+            <div class="single-footer-widget footer_2">
+              <h4>Contact info</h4>
+              <div class="contact_info">
+                <p>
+                  Address Address Address Address Address Address Address
+                  Address Address Address Address Address Address Address
+                  Address Address Address Address Address Address
+                </p>
+                <p><span> Address :</span> Delhi</p>
+                <p><span> Phone :</span> +91 9876543210</p>
+                <p><span> Email : </span>support@canstruct.com</p>
+                <p>&#169; 2020 Canstruct All rights reserved.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </footer>
     <!-- footer part end-->
 
@@ -316,6 +1272,5 @@
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-</body>
-
+  </body>
 </html>
