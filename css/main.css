@@ -163,7 +163,7 @@ figure {
   display: table;
   width: 100%;
   margin: 0 auto;
-  background-color: ##fff3d4;
+  background-color: #fff3d4;
 }
 .md-stepper-horizontal .md-step {
   display: table-cell;
@@ -173,6 +173,9 @@ figure {
 }
 
 @media (max-width: 991px) {
+  .md-stepper-horizontal .md-step {
+    padding: 10px;
+  }
   /* .md-stepper-horizontal {
     display: table;
   } */
@@ -294,6 +297,7 @@ figure {
   .md-stepper-horizontal .md-step .md-step-bar-left,
   .md-stepper-horizontal .md-step .md-step-bar-right {
     border: 1px solid #dddddd;
+    top: 40px;
   }
   .md-stepper-horizontal .md-step .md-step-title {
     margin-top: 3px;
@@ -885,7 +889,7 @@ a:active {
 
 .theme-bg {
   background-color: #ffc42e !important;
-  color: black;
+  color: #fff;
 }
 
 .primary-title {
