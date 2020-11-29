@@ -56,7 +56,7 @@ function converter(val) {
 }
 
 function budgetPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 1515;
+  build_up = build_up * 1600;
   balcony = balcony * 921;
   noOfCarParking = noOfCarParking * 130 * 921;
   var Total = build_up + balcony + noOfCarParking;
@@ -81,7 +81,7 @@ function budgetPackage(build_up, balcony, noOfCarParking) {
 }
 
 function basicPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 1620;
+  build_up = build_up * 1700;
   balcony = balcony * 990;
   noOfCarParking = noOfCarParking * 130 * 990;
   var Total = build_up + balcony + noOfCarParking;
@@ -107,7 +107,7 @@ function basicPackage(build_up, balcony, noOfCarParking) {
 }
 
 function classicPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 1730;
+  build_up = build_up * 1820;
   balcony = balcony * 1059;
   noOfCarParking = noOfCarParking * 130 * 1059;
   var Total = build_up + balcony + noOfCarParking;
@@ -132,7 +132,7 @@ function classicPackage(build_up, balcony, noOfCarParking) {
 }
 
 function premiumPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 1830;
+  build_up = build_up * 1920;
   balcony = balcony * 1119;
   noOfCarParking = noOfCarParking * 130 * 1119;
   var Total = build_up + balcony + noOfCarParking;
@@ -157,7 +157,7 @@ function premiumPackage(build_up, balcony, noOfCarParking) {
 }
 
 function royalPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 1980;
+  build_up = build_up * 2050;
   balcony = balcony * 1194;
   noOfCarParking = noOfCarParking * 130 * 1194;
   var Total = build_up + balcony + noOfCarParking;
@@ -183,7 +183,7 @@ function royalPackage(build_up, balcony, noOfCarParking) {
 }
 
 function imperiaPackage(build_up, balcony, noOfCarParking) {
-  build_up = build_up * 2130;
+  build_up = build_up * 2200;
   balcony = balcony * 1290;
   noOfCarParking = noOfCarParking * 130 * 1290;
   var Total = build_up + balcony + noOfCarParking;
