@@ -82,8 +82,8 @@ figure {
 
 #slideImg {
   display: block;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 40%;
 }
 
@@ -150,8 +150,9 @@ figure {
   }
   #sliderText {
     padding: 0px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-top: 20px;
+    margin-right: 0px;
   }
   .controller div {
     margin-left: 6px;
