@@ -1,3 +1,7 @@
+.image .img1 {
+  cursor: default;
+}
+
 .vl {
   border-right: 1px solid black;
   margin: 10px;
@@ -469,6 +473,25 @@ a:active {
   transition: all 0.5s;
 }
 
+#accordion1 .panel-heading a:before {
+  content: "";
+  font-size: 24px;
+  position: absolute;
+  font-family: "themify";
+  right: 5px;
+  top: 15px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+#accordion1 .panel-heading.active a:before {
+  content: "";
+  position: absolute;
+  font-family: "themify";
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
 .multi_service {
   padding: 4px 2px 6px;
   border: 1px solid #e8e9eb;
@@ -605,7 +628,7 @@ a:active {
     line-height: 1.2;
   }
   .single_service_q {
-    width: 100%;
+    width: 120%;
   }
 }
 
@@ -1669,4 +1692,71 @@ select {
   content: "";
   top: 0.0625rem;
   left: 0.75rem;
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+.social-network a.icoYt:hover {
+  background-color: #e52d27;
+}
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+.social-network a.icoGoogle:hover {
+  background-color: #bd3518;
+}
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #ffc42e;
+}
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 3.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.8s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.bottom-line {
+  border-bottom: 1px dashed #212529;
+  border-left: 1px dashed #212529;
+}
+
+.navbar-nav li a:hover {
+  background: white;
 }
